@@ -1,0 +1,206 @@
+@import "partials/variables", "partials/mixins", "partials/colorfunction", "partials/keyframes";
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Monoton&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Kavivanar');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Chewy');
+
+body {
+  background-image: url(../images/background/back1.jpg);
+  width: 1000px;
+  font-family: $defaultfont;
+
+  header {
+    background-image: url(../images/mountain/mountain1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    width: 100%;
+    //////////////////////////// navbar///////////////////////////////
+    nav {
+      @include nav;
+    }
+
+
+  ///////////////// heading////////////////////////////////
+    .heading-container {
+      width: 1000px;
+      padding-top: 26em;
+      padding-bottom: 50px;
+      margin-bottom: 0px;
+      left: 2%;
+
+
+      .head {
+        border: 0px solid;
+        padding: 15px;
+        width: 170px;
+        height: 100px;
+
+
+        h1 {
+          // font-family: 'Cabin Sketch', cursive;
+          font-family: $basefont;
+          color: $transparent;
+          font-size: $heading;
+          text-shadow: 2px 2px 1px #000000b5;
+          @include fade;
+          @include fade-in;
+        }
+      }
+    }
+  }
+ //////////////////////////////////////////////////////////////////////////
+ section {
+   display: grid;
+   grid-template-areas:
+   'images'
+   'section'
+   'sidebar'
+   'sectiontwo'
+   'sectionthree'
+   'sidebarTwo'
+   'sectionfour';
+   grid-row-gap: 10px;
+
+   #images {
+       grid-area: images;
+       border: 0px solid blue;
+       background: $fireBrickGradient;
+       width: 100%;
+       h3 {
+         display: inline-block;
+         font-family: $secondfont;
+         font-size: 17px;
+         &:nth-child(1) {
+           margin-left: 6em;
+         }
+         &:nth-child(2) {
+           margin-left: 10em;
+         }
+         &:nth-child(3) {
+           margin-left: 10em;
+         }
+         &:nth-child(4) {
+           margin-left: 9em;
+         }
+       }
+       .homeImg {
+         height: 170px;
+         width: 170px;
+         display: inline-block;
+         margin-left: 54px;
+       }
+     }
+     #camping {
+       background-color: #b1706761;
+       grid-area: section;
+       .camping {
+         padding: 5px;
+         h4 {
+           font-family: $fontfive;
+           font-size: 25px;
+         }
+       }
+     }
+     #fishing {
+       background-color: #b1706761;
+       grid-area: sectiontwo;
+       .fishing {
+         padding: 5px;
+         h4 {
+           font-family: $fontfive;
+           font-size: 25px;;
+         }
+       }
+     }
+     #hiking {
+       background-color: #b1706761;
+       grid-area: sectionthree;
+       .hiking {
+         padding: 5px;
+         h4 {
+           font-family: $fontfive;
+           font-size: 25px;
+         }
+       }
+      }
+     #rock-climbing {
+       background-color: #b1706761;
+       grid-area: sectionfour;
+       .rock-climbing {
+         padding: 5px;
+         h4 {
+           font-family: $fontfive;
+           font-size: 25px;
+         }
+       }
+     }
+     #scroll-one {
+       background-color: #b1706761;
+       grid-area: sidebar;
+       h5 {
+         font-family: $firstfont;
+       }
+     }
+     #scroll-two {
+       background-color: #b1706761;
+       grid-area: sidebarTwo;
+       h5 {
+         font-family: $firstfont;
+       }
+     }
+
+   .sidebar {
+      @include scrollB;
+
+      .picture {
+        width: 500px;
+        height: 300px;
+        display: inline-block;
+      }
+    }
+  }
+  footer {
+    @include footer;
+  }
+
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    width: auto;
+    section {
+      @include desktopview;
+      .sidebar {
+         @include scroll;
+
+         .picture {
+           width: 361px;
+           height: 200px;
+           display: block;
+         }
+       }
+       #images {
+           width: 100%;
+           h3 {
+             font-family: $secondfont;
+             &:nth-child(1) {
+               margin-left: 10em;
+             }
+             &:nth-child(2) {
+               margin-left: 18em;
+             }
+             &:nth-child(3) {
+               margin-left: 17em;
+             }
+             &:nth-child(4) {
+               margin-left: 17em;
+             }
+           }
+           .homeImg {
+             height: 250px;
+             width: 300px;
+           }
+         }
+    }
+  }
+}
