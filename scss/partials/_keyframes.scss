@@ -28,3 +28,87 @@
   animation-duration: 4s;
   animation-timing-function: ease-in-out;
 }
+//////////////////////gallery animation////////////////////////
+
+////////////rotate 'X'///////////////////////////
+@mixin xrotate {
+  @keyframes rotationx {
+  25% {transform: rotateX(0deg);}
+  50% {transform: rotateX(360deg);}
+  75% {transform: rotateY(1deg);}
+  100% {transform: rotateY(355deg);}
+}
+}
+@mixin rotationx {
+   animation-name: rotationx;
+   animation-duration: 4s;
+   animation-timing-function: ease-in-out;
+}
+@mixin yrotate {
+  @keyframes rotationy {
+    75% {transform: rotateY(0deg);}
+    100% {transform: rotateY(-360deg);}
+  }
+}
+@mixin rotationy {
+   animation-name: rotationy;
+   animation-duration: 4s;
+   animation-timing-function: ease-in-out;
+   // animation-iteration-count: infinite;
+}
+@mixin arotate {
+  @keyframes rotationa {
+    75% {transform: rotateX(0deg);}
+    // 66% {transform: rotateY(180deg);}
+    100% {transform: rotateX(360deg);}
+  }
+}
+@mixin rotationa {
+   animation-name: rotationa;
+   animation-duration: 4s;
+   animation-timing-function: ease-in-out;
+   // animation-iteration-count: infinite;
+}
+
+////////////////// slideshow//////////////////
+@mixin slideshow {
+  overflow: hidden;
+  margin: 0;
+}
+@mixin slide-wrapper {
+  animation: slide 18s ease infinite;
+}
+
+@mixin campslidecode {
+  @keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -527px;}
+  50% {margin-left: -527px;}
+  60% {margin-left: -1054px;}
+  70% {margin-left: -1054px;}
+  80% {margin-left: -1581px;}
+  90% {margin-left: -1581px;}
+  }
+}
+@mixin fishingslidecode {
+  @keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -500px;}
+  50% {margin-left: -500px;}
+  60% {margin-left: -1000px;}
+  70% {margin-left: -1000px;}
+  80% {margin-left: -1500px;}
+  90% {margin-left: -1500px;}
+  }
+}
+@mixin fishingslidecode2 {
+  @keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: 500px;}
+  50% {margin-left: 500px;}
+  60% {margin-left: 1000px;}
+  70% {margin-left: 1000px;}
+  80% {margin-left: 1500px;}
+  90% {margin-left: 1500px;}
+  }
+}

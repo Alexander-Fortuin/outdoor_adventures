@@ -15,3 +15,7 @@ $black: #000;
 $transparent: #ffffff45;
 $gradientBackground: linear-gradient(#3498db, #9b59b6);
 $fireBrickGradient: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+
+@mixin gradientOne {
+  background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+}
