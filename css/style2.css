@@ -94,14 +94,16 @@ body {
         z-index: 1; }
       body nav .navbar .icon-box:hover .link {
         display: inherit; }
-  body section #camping {
-    padding: 22em;
-    padding-top: 8em;
-    padding-bottom: 10em;
-    grid-row-gap: 1em;
-    grid-column-gap: 5px;
-    display: grid;
-    grid-template-areas: 'slide slide test1' 'slide slide test2' 'test3 test4 test5'; }
+  body section {
+    margin: 0 auto; }
+    body section #camping {
+      padding: 22em;
+      padding-top: 8em;
+      padding-bottom: 10em;
+      grid-row-gap: 1em;
+      grid-column-gap: 5px;
+      display: grid;
+      grid-template-areas: 'slide slide test1' 'slide slide test2' 'test3 test4 test5'; }
 @keyframes rotationy {
   75% {
     transform: rotateY(0deg); }
@@ -121,18 +123,18 @@ body {
     transform: rotateX(0deg); }
   100% {
     transform: rotateX(360deg); } }
-    body section #camping div {
-      border: 0px solid black;
-      width: 250px;
-      height: 150px; }
-    body section #camping .slideshow {
-      border: 1px solid black;
-      width: 527px;
-      height: 318px;
-      grid-area: slide;
-      overflow: hidden;
-      margin: 0; }
-@keyframes slide {
+      body section #camping div {
+        border: 0px solid black;
+        width: 250px;
+        height: 150px; }
+      body section #camping .slideshow {
+        border: 1px solid black;
+        width: 527px;
+        height: 318px;
+        grid-area: slide;
+        overflow: hidden;
+        margin: 0; }
+@keyframes campslide {
   20% {
     margin-left: 0px; }
   30% {
@@ -147,385 +149,639 @@ body {
     margin-left: -1581px; }
   90% {
     margin-left: -1581px; } }
-      body section #camping .slideshow .slide-wrapper {
-        animation: slide 18s ease infinite;
-        width: 2912px; }
-        body section #camping .slideshow .slide-wrapper .slide {
-          width: 527px;
-          height: 318px;
-          float: left; }
-    body section #camping .box1 {
-      grid-area: test1;
-      animation-name: rotationa;
-      animation-duration: 4s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0s;
-      position: relative; }
-      body section #camping .box1 .overlay {
-        left: 0;
-        right: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        width: 100%;
-        transform: scale(0); }
-      body section #camping .box1:hover .overlay {
-        transform: scale(1); }
-      body section #camping .box1 .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section #camping .box1 .overlay .text {
-          color: white;
-          font-size: 20px;
+        body section #camping .slideshow .slide-wrapper {
+          animation: campslide 18s ease infinite;
+          width: 2912px; }
+          body section #camping .slideshow .slide-wrapper .slide {
+            width: 527px;
+            height: 318px;
+            float: left; }
+      body section #camping .box1 {
+        grid-area: test1;
+        animation-name: rotationa;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        position: relative; }
+        body section #camping .box1 .overlay {
+          left: 0;
+          right: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          width: 100%;
+          transform: scale(0); }
+        body section #camping .box1:hover .overlay {
+          transform: scale(1); }
+        body section #camping .box1 .overlay {
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
-    body section #camping .box2 {
-      grid-area: test2;
-      animation-name: rotationa;
-      animation-duration: 4s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0.5s;
-      position: relative; }
-      body section #camping .box2 .overlay {
-        left: 0;
-        right: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        width: 100%;
-        transform: scale(0); }
-      body section #camping .box2:hover .overlay {
-        transform: scale(1); }
-      body section #camping .box2 .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section #camping .box2 .overlay .text {
-          color: white;
-          font-size: 20px;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #camping .box1 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+      body section #camping .box2 {
+        grid-area: test2;
+        animation-name: rotationa;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0.5s;
+        position: relative; }
+        body section #camping .box2 .overlay {
+          left: 0;
+          right: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          width: 100%;
+          transform: scale(0); }
+        body section #camping .box2:hover .overlay {
+          transform: scale(1); }
+        body section #camping .box2 .overlay {
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
-    body section #camping .box3 {
-      grid-area: test3;
-      animation-name: rotationy;
-      animation-duration: 4s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 4s;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #camping .box2 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+      body section #camping .box3 {
+        grid-area: test3;
+        animation-name: rotationy;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 4s;
+        position: relative; }
+        body section #camping .box3 .overlay {
+          left: 100%;
+          right: 0;
+          width: 0; }
+        body section #camping .box3:hover .overlay {
+          width: 100%;
+          left: 0; }
+        body section #camping .box3 .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #camping .box3 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+      body section #camping .box4 {
+        grid-area: test4;
+        animation-name: rotationy;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 3.5s;
+        position: relative; }
+        body section #camping .box4 .overlay {
+          left: 0;
+          right: 100%;
+          width: 0; }
+        body section #camping .box4:hover .overlay {
+          width: 100%;
+          right: 0; }
+        body section #camping .box4 .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #camping .box4 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+      body section #camping .box5 {
+        grid-area: test5;
+        animation-name: rotationx;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 3s;
+        position: relative; }
+        body section #camping .box5 .overlay {
+          left: 100%;
+          right: 0;
+          width: 0; }
+        body section #camping .box5:hover .overlay {
+          width: 100%;
+          left: 0; }
+        body section #camping .box5 .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #camping .box5 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+    body section #fishing {
+      display: grid;
+      grid-template-areas: 'slide1 slide1 fish fish2' 'slide1 slide1 slide2 slide2' 'nonefish nonefish slide2 slide2';
+      padding-left: 13em;
+      padding-right: 20em; }
+      body section #fishing .slideshow {
+        border: 0px solid black;
+        width: 500px;
+        height: 300px;
+        grid-area: slide1;
+        overflow: hidden;
+        margin: 0; }
+@keyframes fishslide {
+  20% {
+    margin-left: 0px; }
+  30% {
+    margin-left: -500px; }
+  50% {
+    margin-left: -500px; }
+  60% {
+    margin-left: -1000px; }
+  70% {
+    margin-left: -1000px; }
+  80% {
+    margin-left: -1500px; }
+  90% {
+    margin-left: -1500px; } }
+        body section #fishing .slideshow .slide-wrapper {
+          animation: fishslide 18s ease infinite;
+          width: 2912px; }
+          body section #fishing .slideshow .slide-wrapper .slide {
+            width: 500px;
+            height: 300px;
+            float: left; }
+      body section #fishing .slideshow2 {
+        border: 0px solid black;
+        width: 500px;
+        height: 300px;
+        grid-area: slide2;
+        overflow: hidden;
+        margin: 0; }
+@keyframes fishslide {
+  20% {
+    margin-left: 0px; }
+  30% {
+    margin-left: -500px; }
+  50% {
+    margin-left: -500px; }
+  60% {
+    margin-left: -1000px; }
+  70% {
+    margin-left: -1000px; }
+  80% {
+    margin-left: -1500px; }
+  90% {
+    margin-left: -1500px; } }
+        body section #fishing .slideshow2 .slide-wrapper {
+          animation: fishslide 18s ease infinite;
+          width: 2912px; }
+          body section #fishing .slideshow2 .slide-wrapper .slide {
+            width: 500px;
+            height: 300px;
+            float: left; }
+      body section #fishing .part1 {
+        border: 0px solid black;
+        height: 150px;
+        width: 250px;
+        grid-area: fish;
+        position: relative; }
+        body section #fishing .part1 .overlay {
+          left: 0;
+          right: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          width: 100%;
+          transform: scale(0); }
+        body section #fishing .part1:hover .overlay {
+          transform: scale(1); }
+        body section #fishing .part1 .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #fishing .part1 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+      body section #fishing .part2 {
+        border: 0px solid black;
+        height: 150px;
+        width: 250px;
+        grid-area: fish2;
+        position: relative; }
+        body section #fishing .part2 .overlay {
+          left: 0;
+          right: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          width: 100%;
+          transform: scale(0); }
+        body section #fishing .part2:hover .overlay {
+          transform: scale(1); }
+        body section #fishing .part2 .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #fishing .part2 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+      body section #fishing .part3 {
+        border: 0px solid black;
+        overflow: hidden;
+        width: 500px;
+        height: 150px;
+        grid-area: nonefish;
+        position: relative; }
+        body section #fishing .part3 .overlay {
+          left: 0;
+          right: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          width: 100%;
+          transform: scale(0); }
+        body section #fishing .part3:hover .overlay {
+          transform: scale(1); }
+        body section #fishing .part3 .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #fishing .part3 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+    body section #hiking {
+      display: grid;
+      grid-template-areas: 'hiking hiking hiking2 hiking2' 'hiking hiking hiking2 hiking2' 'hike2 hike hike hike3';
+      padding-left: 13em;
+      padding-right: 20em;
+      padding-top: 2em;
+      padding-top: 5em; }
+      body section #hiking .slideshow {
+        border: 0px solid black;
+        width: 500px;
+        height: 300px;
+        grid-area: hiking;
+        overflow: hidden;
+        margin: 0; }
+@keyframes fishslide {
+  20% {
+    margin-left: 0px; }
+  30% {
+    margin-left: -500px; }
+  50% {
+    margin-left: -500px; }
+  60% {
+    margin-left: -1000px; }
+  70% {
+    margin-left: -1000px; }
+  80% {
+    margin-left: -1500px; }
+  90% {
+    margin-left: -1500px; } }
+        body section #hiking .slideshow .slide-wrapper {
+          animation: fishslide 18s ease infinite;
+          width: 2912px; }
+          body section #hiking .slideshow .slide-wrapper .slide {
+            width: 500px;
+            height: 300px;
+            float: left; }
+      body section #hiking .slideshow2 {
+        border: 0px solid black;
+        width: 500px;
+        height: 300px;
+        grid-area: hiking2;
+        overflow: hidden;
+        margin: 0; }
+@keyframes fishslide {
+  20% {
+    margin-left: 0px; }
+  30% {
+    margin-left: -500px; }
+  50% {
+    margin-left: -500px; }
+  60% {
+    margin-left: -1000px; }
+  70% {
+    margin-left: -1000px; }
+  80% {
+    margin-left: -1500px; }
+  90% {
+    margin-left: -1500px; } }
+        body section #hiking .slideshow2 .slide-wrapper {
+          animation: fishslide 18s ease infinite;
+          width: 2912px; }
+          body section #hiking .slideshow2 .slide-wrapper .slide {
+            width: 500px;
+            height: 300px;
+            float: left; }
+      body section #hiking .hike {
+        border: 0px solid black;
+        width: 500px;
+        height: 200px;
+        grid-area: hike;
+        position: relative; }
+        body section #hiking .hike .overlay {
+          left: 0;
+          right: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          width: 100%;
+          transform: scale(0); }
+        body section #hiking .hike:hover .overlay {
+          transform: scale(1); }
+        body section #hiking .hike .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #hiking .hike .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+      body section #hiking .hike2 {
+        border: 0px solid black;
+        width: 250px;
+        height: 200px;
+        grid-area: hike2;
+        position: relative; }
+        body section #hiking .hike2 .overlay {
+          left: 100%;
+          right: 0;
+          width: 0; }
+        body section #hiking .hike2:hover .overlay {
+          width: 100%;
+          left: 0; }
+        body section #hiking .hike2 .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #hiking .hike2 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+      body section #hiking .hike3 {
+        border: 0px solid black;
+        width: 250px;
+        height: 200px;
+        grid-area: hike3;
+        position: relative; }
+        body section #hiking .hike3 .overlay {
+          left: 0;
+          right: 100%;
+          width: 0; }
+        body section #hiking .hike3:hover .overlay {
+          width: 100%;
+          right: 0; }
+        body section #hiking .hike3 .overlay {
+          position: absolute;
+          bottom: 0;
+          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+          overflow: hidden;
+          height: 100%;
+          transition: .3s ease; }
+          body section #hiking .hike3 .overlay .text {
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center; }
+    body section #rock-climbing {
+      display: grid;
+      grid-template-areas: 'topslot topslot topslot topslot' 'slot1 slotS slotS slot2' 'slot3 slotS slotS slot4';
+      padding-left: 13em;
+      padding-right: 20em;
+      padding-top: 2em; }
+    body section .img1 {
+      border: 0px solid black;
+      width: 300px;
+      height: 200px;
+      grid-area: slot1;
       position: relative; }
-      body section #camping .box3 .overlay {
+      body section .img1 .overlay {
         left: 100%;
         right: 0;
         width: 0; }
-      body section #camping .box3:hover .overlay {
+      body section .img1:hover .overlay {
         width: 100%;
         left: 0; }
-      body section #camping .box3 .overlay {
+      body section .img1 .overlay {
         position: absolute;
         bottom: 0;
         background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
         overflow: hidden;
         height: 100%;
         transition: .3s ease; }
-        body section #camping .box3 .overlay .text {
+        body section .img1 .overlay .text {
           color: white;
-          font-size: 20px;
+          font-size: 10px;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center; }
-    body section #camping .box4 {
-      grid-area: test4;
-      animation-name: rotationy;
-      animation-duration: 4s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 3.5s;
+    body section .img2 {
+      border: 0px solid black;
+      width: 300px;
+      height: 200px;
+      grid-area: slot2;
       position: relative; }
-      body section #camping .box4 .overlay {
+      body section .img2 .overlay {
         left: 0;
         right: 100%;
         width: 0; }
-      body section #camping .box4:hover .overlay {
+      body section .img2:hover .overlay {
         width: 100%;
         right: 0; }
-      body section #camping .box4 .overlay {
+      body section .img2 .overlay {
         position: absolute;
         bottom: 0;
         background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
         overflow: hidden;
         height: 100%;
         transition: .3s ease; }
-        body section #camping .box4 .overlay .text {
+        body section .img2 .overlay .text {
           color: white;
-          font-size: 20px;
+          font-size: 10px;
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           text-align: center; }
-    body section #camping .box5 {
-      grid-area: test5;
-      animation-name: rotationx;
-      animation-duration: 4s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 3s;
-      position: relative; }
-      body section #camping .box5 .overlay {
-        left: 0;
-        right: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        width: 100%;
-        transform: scale(0); }
-      body section #camping .box5:hover .overlay {
-        transform: scale(1); }
-      body section #camping .box5 .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section #camping .box5 .overlay .text {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
-  body section #fishing {
-    display: grid;
-    grid-template-areas: 'slide1 slide1 fish fish2' 'slide1 slide1 slide2 slide2' 'nonefish nonefish slide2 slide2';
-    padding-left: 13em;
-    padding-right: 20em; }
-    body section #fishing .slideshow {
+    body section .img3 {
       border: 0px solid black;
-      width: 500px;
-      height: 300px;
-      grid-area: slide1;
+      width: 300px;
+      height: 200px;
+      grid-area: slot3;
+      position: relative; }
+      body section .img3 .overlay {
+        left: 0;
+        right: 100%;
+        width: 0; }
+      body section .img3:hover .overlay {
+        width: 100%;
+        right: 0; }
+      body section .img3 .overlay {
+        position: absolute;
+        bottom: 0;
+        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+        overflow: hidden;
+        height: 100%;
+        transition: .3s ease; }
+        body section .img3 .overlay .text {
+          color: white;
+          font-size: 10px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center; }
+    body section .img4 {
+      border: 0px solid black;
+      width: 300px;
+      height: 200px;
+      grid-area: slot4;
+      position: relative; }
+      body section .img4 .overlay {
+        left: 100%;
+        right: 0;
+        width: 0; }
+      body section .img4:hover .overlay {
+        width: 100%;
+        left: 0; }
+      body section .img4 .overlay {
+        position: absolute;
+        bottom: 0;
+        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+        overflow: hidden;
+        height: 100%;
+        transition: .3s ease; }
+        body section .img4 .overlay .text {
+          color: white;
+          font-size: 10px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center; }
+    body section .slideshow {
+      border: 0px solid black;
+      width: 1000px;
+      height: 200px;
+      grid-area: topslot;
       overflow: hidden;
       margin: 0; }
-@keyframes slide {
+@keyframes rockslide {
   20% {
     margin-left: 0px; }
   30% {
-    margin-left: -527px; }
+    margin-left: -1000px; }
   50% {
-    margin-left: -527px; }
+    margin-left: -1000px; }
   60% {
-    margin-left: -1054px; }
+    margin-left: -2000px; }
   70% {
-    margin-left: -1054px; }
-  80% {
-    margin-left: -1581px; }
-  90% {
-    margin-left: -1581px; } }
-      body section #fishing .slideshow .slide-wrapper {
-        animation: slide 18s ease infinite;
-        width: 2912px; }
-        body section #fishing .slideshow .slide-wrapper .slide {
-          width: 500px;
-          height: 300px;
+    margin-left: -2000px; } }
+      body section .slideshow .slide-wrapper {
+        animation: rockslide 18s ease infinite;
+        width: 10000px; }
+        body section .slideshow .slide-wrapper .slide {
+          width: 1000px;
+          height: 200px;
           float: left; }
-    body section #fishing .slideshow2 {
+    body section .slideshow2 {
       border: 0px solid black;
-      width: 500px;
-      height: 300px;
-      grid-area: slide2;
+      width: 400px;
+      height: 400px;
+      grid-area: slotS;
       overflow: hidden;
       margin: 0; }
-@keyframes slide {
+@keyframes rockslide2 {
   20% {
     margin-left: 0px; }
   30% {
-    margin-left: -527px; }
+    margin-left: -400px; }
   50% {
-    margin-left: -527px; }
+    margin-left: -400px; }
   60% {
-    margin-left: -1054px; }
+    margin-left: -800px; }
   70% {
-    margin-left: -1054px; }
+    margin-left: -800px; }
   80% {
-    margin-left: -1581px; }
+    margin-left: -1200px; }
   90% {
-    margin-left: -1581px; } }
-      body section #fishing .slideshow2 .slide-wrapper {
-        animation: slide 18s ease infinite;
+    margin-left: -1200px; } }
+      body section .slideshow2 .slide-wrapper {
+        animation: rockslide2 18s ease infinite;
         width: 2912px; }
-        body section #fishing .slideshow2 .slide-wrapper .slide {
-          width: 500px;
-          height: 300px;
+        body section .slideshow2 .slide-wrapper .slide {
+          width: 400px;
+          height: 400px;
           float: left; }
-    body section #fishing .fish {
-      border: 0px solid black;
-      height: 150px;
-      width: 250px;
-      grid-area: fish;
-      position: relative; }
-      body section #fishing .fish .overlay {
-        left: 0;
-        right: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        width: 100%;
-        transform: scale(0); }
-      body section #fishing .fish:hover .overlay {
-        transform: scale(1); }
-      body section #fishing .fish .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section #fishing .fish .overlay .text {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
-    body section #fishing .fish2 {
-      border: 0px solid black;
-      height: 150px;
-      width: 250px;
-      grid-area: fish2;
-      position: relative; }
-      body section #fishing .fish2 .overlay {
-        left: 0;
-        right: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        width: 100%;
-        transform: scale(0); }
-      body section #fishing .fish2:hover .overlay {
-        transform: scale(1); }
-      body section #fishing .fish2 .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section #fishing .fish2 .overlay .text {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
-    body section #fishing .nonefish {
-      border: 0px solid black;
-      overflow: hidden;
-      width: 500px;
-      height: 150px;
-      grid-area: nonefish;
-      position: relative; }
-      body section #fishing .nonefish .overlay {
-        left: 0;
-        right: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        width: 100%;
-        transform: scale(0); }
-      body section #fishing .nonefish:hover .overlay {
-        transform: scale(1); }
-      body section #fishing .nonefish .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section #fishing .nonefish .overlay .text {
-          color: white;
-          font-size: 20px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
-  body section #hiking {
-    display: grid;
-    grid-template-areas: 'hiking hiking hiking2 hiking2' 'hiking hiking hiking2 hiking2' 'hike2 hike hike hike3';
-    padding-left: 13em;
-    padding-right: 20em;
-    padding-top: 2em; }
-    body section #hiking .hiking {
-      border: 1px solid black;
-      width: 500px;
-      height: 300px;
-      grid-area: hiking; }
-    body section #hiking .hiking2 {
-      border: 1px solid black;
-      width: 500px;
-      height: 300px;
-      grid-area: hiking2; }
-    body section #hiking .hike {
-      border: 1px solid black;
-      width: 500px;
-      height: 200px;
-      grid-area: hike; }
-    body section #hiking .hike2 {
-      border: 1px solid black;
-      width: 250px;
-      height: 200px;
-      grid-area: hike2; }
-    body section #hiking .hike3 {
-      border: 1px solid black;
-      width: 250px;
-      height: 200px;
-      grid-area: hike3; }
-  body section #rock-climbing {
-    display: grid;
-    grid-template-areas: 'topslot topslot topslot topslot' 'slot1 slotS slotS slot2' 'slot3 slotS slotS slot4';
-    padding-left: 13em;
-    padding-right: 20em;
-    padding-top: 2em; }
-  body section .img1 {
-    border: 1px solid black;
-    width: 300px;
-    height: 200px;
-    grid-area: slot1; }
-  body section .img2 {
-    border: 1px solid black;
-    width: 300px;
-    height: 200px;
-    grid-area: slot2; }
-  body section .img3 {
-    border: 1px solid black;
-    width: 300px;
-    height: 200px;
-    grid-area: slot3; }
-  body section .img4 {
-    border: 1px solid black;
-    width: 300px;
-    height: 200px;
-    grid-area: slot4; }
-  body section .rock {
-    border: 1px solid black;
-    width: 1000px;
-    height: 200px;
-    grid-area: topslot; }
-  body section .rock2 {
-    border: 1px solid black;
-    width: 400px;
-    height: 400px;
-    grid-area: slotS; }
   body footer {
     border: 0px solid;
     background-color: #ffffff45;

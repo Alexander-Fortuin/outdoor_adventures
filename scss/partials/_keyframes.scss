@@ -80,7 +80,7 @@
 }
 
 @mixin campslidecode {
-  @keyframes slide {
+  @keyframes campslide {
   20% {margin-left: 0px;}
   30% {margin-left: -527px;}
   50% {margin-left: -527px;}
@@ -91,7 +91,7 @@
   }
 }
 @mixin fishingslidecode {
-  @keyframes slide {
+  @keyframes fishslide {
   20% {margin-left: 0px;}
   30% {margin-left: -500px;}
   50% {margin-left: -500px;}
@@ -101,14 +101,24 @@
   90% {margin-left: -1500px;}
   }
 }
-@mixin fishingslidecode2 {
-  @keyframes slide {
+@mixin rockslidecode {
+  @keyframes rockslide {
   20% {margin-left: 0px;}
-  30% {margin-left: 500px;}
-  50% {margin-left: 500px;}
-  60% {margin-left: 1000px;}
-  70% {margin-left: 1000px;}
-  80% {margin-left: 1500px;}
-  90% {margin-left: 1500px;}
+  30% {margin-left: -1000px;}
+  50% {margin-left: -1000px;}
+  60% {margin-left: -2000px;}
+  70% {margin-left: -2000px;}
+  
+  }
+}
+@mixin rockslidecode2 {
+  @keyframes rockslide2 {
+  20% {margin-left: 0px;}
+  30% {margin-left: -400px;}
+  50% {margin-left: -400px;}
+  60% {margin-left: -800px;}
+  70% {margin-left: -800px;}
+  80% {margin-left: -1200px;}
+  90% {margin-left: -1200px;}
   }
 }

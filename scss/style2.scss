@@ -12,7 +12,9 @@ body {
     z-index: 2;
   }
   section {
-      // padding-top: 30px;
+    margin: 0 auto;
+
+
   #camping {
     padding: 22em;
     padding-top: 8em;
@@ -40,7 +42,7 @@ body {
       @include campslidecode;
       @include slideshow;
       .slide-wrapper {
-        @include slide-wrapper;
+        animation: campslide 18s ease infinite;
         width: 2912px;
         .slide {
           width: 527px;
@@ -81,7 +83,7 @@ body {
       grid-area: test5;
       @include rotationx;
       animation-delay: 3s;
-      @include overlaycenter;
+      @include overlayright;
       @include overlay;
     }
   }
@@ -93,15 +95,16 @@ body {
     'nonefish nonefish slide2 slide2';
     padding-left: 13em;
     padding-right: 20em;
+
     .slideshow {
       border: 0px solid black;
       width: 500px;
       height: 300px;
       grid-area: slide1;
-      @include campslidecode;
+      @include fishingslidecode;
       @include slideshow;
       .slide-wrapper {
-        @include slide-wrapper;
+        animation: fishslide 18s ease infinite;
         width: 2912px;
         .slide {
           width: 500px;
@@ -110,16 +113,15 @@ body {
         }
       }
     }
-
     .slideshow2 {
       border: 0px solid black;
       width: 500px;
       height: 300px;
       grid-area: slide2;
-      @include campslidecode;
+      @include fishingslidecode;
       @include slideshow;
       .slide-wrapper {
-        @include slide-wrapper;
+        animation: fishslide 18s ease infinite;
         width: 2912px;
         .slide {
           width: 500px;
@@ -128,7 +130,7 @@ body {
         }
       }
     }
-    .fish {
+    .part1 {
       border: 0px solid black;
       height: 150px;
       width: 250px;
@@ -136,7 +138,7 @@ body {
       @include overlaycenter;
       @include overlay;
     }
-    .fish2 {
+    .part2 {
       border: 0px solid black;
       height: 150px;
       width: 250px;
@@ -144,7 +146,7 @@ body {
       @include overlaycenter;
       @include overlay;
     }
-    .nonefish {
+    .part3 {
       border: 0px solid black;
       overflow: hidden;
       width: 500px;
@@ -163,36 +165,65 @@ body {
     padding-left: 13em;
     padding-right: 20em;
     padding-top: 2em;
-
-    .hiking {
-      border: 1px solid black;
+    padding-top: 5em;
+    .slideshow {
+      border: 0px solid black;
       width: 500px;
       height: 300px;
       grid-area: hiking;
+      @include fishingslidecode;
+      @include slideshow;
+      .slide-wrapper {
+        animation: fishslide 18s ease infinite;
+        width: 2912px;
+        .slide {
+          width: 500px;
+          height: 300px;
+          float: left;
+        }
+      }
     }
-    .hiking2 {
-      border: 1px solid black;
+    .slideshow2 {
+      border: 0px solid black;
       width: 500px;
       height: 300px;
       grid-area: hiking2;
+      @include fishingslidecode;
+      @include slideshow;
+      .slide-wrapper {
+        animation: fishslide 18s ease infinite;
+        width: 2912px;
+        .slide {
+          width: 500px;
+          height: 300px;
+          float: left;
+        }
+      }
     }
+
     .hike {
-      border: 1px solid black;
+      border: 0px solid black;
       width: 500px;
       height: 200px;
       grid-area: hike;
+      @include overlaycenter;
+      @include overlay;
     }
     .hike2 {
-      border: 1px solid black;
+      border: 0px solid black;
       width: 250px;
       height: 200px;
       grid-area: hike2;
+      @include overlayright;
+      @include overlay;
     }
     .hike3 {
-      border: 1px solid black;
+      border: 0px solid black;
       width: 250px;
       height: 200px;
       grid-area: hike3;
+      @include overlayleft;
+      @include overlay;
     }
   }
   #rock-climbing {
@@ -206,40 +237,72 @@ body {
     padding-top: 2em;
   }
   .img1 {
-    border: 1px solid black;
+    border: 0px solid black;
     width: 300px;
     height: 200px;
     grid-area: slot1;
+    @include overlayright;
+    @include overlay;
   }
   .img2 {
-    border: 1px solid black;
+    border: 0px solid black;
     width: 300px;
     height: 200px;
     grid-area: slot2;
+    @include overlayleft;
+    @include overlay;
   }
   .img3 {
-    border: 1px solid black;
+    border: 0px solid black;
     width: 300px;
     height: 200px;
     grid-area: slot3;
+    @include overlayleft;
+    @include overlay;
   }
   .img4 {
-    border: 1px solid black;
+    border: 0px solid black;
     width: 300px;
     height: 200px;
     grid-area: slot4;
+    @include overlayright;
+    @include overlay;
   }
-  .rock {
-    border: 1px solid black;
+
+
+  .slideshow {
+    border: 0px solid black;
     width: 1000px;
     height: 200px;
     grid-area: topslot;
+    @include rockslidecode;
+    @include slideshow;
+    .slide-wrapper {
+      animation: rockslide 18s ease infinite;
+      width: 10000px;
+      .slide {
+        width: 1000px;
+        height: 200px;
+        float: left;
+      }
+    }
   }
-  .rock2 {
-    border: 1px solid black;
+  .slideshow2 {
+    border: 0px solid black;
     width: 400px;
     height: 400px;
     grid-area: slotS;
+    @include rockslidecode2;
+    @include slideshow;
+    .slide-wrapper {
+      animation: rockslide2 18s ease infinite;
+      width: 2912px;
+      .slide {
+        width: 400px;
+        height: 400px;
+        float: left;
+      }
+    }
   }
 }
 footer {
