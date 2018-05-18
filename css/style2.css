@@ -155,7 +155,34 @@ body {
           body section #camping .slideshow .slide-wrapper .slide {
             width: 527px;
             height: 318px;
-            float: left; }
+            float: left;
+            position: relative; }
+            body section #camping .slideshow .slide-wrapper .slide .overlay {
+              left: 0;
+              right: 0;
+              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+              overflow: hidden;
+              width: 100%;
+              transform: scale(0); }
+            body section #camping .slideshow .slide-wrapper .slide:hover .overlay {
+              transform: scale(1); }
+            body section #camping .slideshow .slide-wrapper .slide .overlay {
+              position: absolute;
+              bottom: 0;
+              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+              overflow: hidden;
+              height: 100%;
+              transition: .3s ease; }
+              body section #camping .slideshow .slide-wrapper .slide .overlay .text {
+                color: white;
+                font-size: 10px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center; }
+            body section #camping .slideshow .slide-wrapper .slide .overlay .text {
+              font-size: 25px; }
       body section #camping .box1 {
         grid-area: test1;
         animation-name: rotationa;
@@ -338,7 +365,34 @@ body {
           body section #fishing .slideshow .slide-wrapper .slide {
             width: 500px;
             height: 300px;
-            float: left; }
+            float: left;
+            position: relative; }
+            body section #fishing .slideshow .slide-wrapper .slide .overlay {
+              left: 0;
+              right: 0;
+              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+              overflow: hidden;
+              width: 100%;
+              transform: scale(0); }
+            body section #fishing .slideshow .slide-wrapper .slide:hover .overlay {
+              transform: scale(1); }
+            body section #fishing .slideshow .slide-wrapper .slide .overlay {
+              position: absolute;
+              bottom: 0;
+              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+              overflow: hidden;
+              height: 100%;
+              transition: .3s ease; }
+              body section #fishing .slideshow .slide-wrapper .slide .overlay .text {
+                color: white;
+                font-size: 10px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center; }
+            body section #fishing .slideshow .slide-wrapper .slide .overlay .text {
+              font-size: 25px; }
       body section #fishing .slideshow2 {
         border: 0px solid black;
         width: 500px;
@@ -494,7 +548,34 @@ body {
           body section #hiking .slideshow .slide-wrapper .slide {
             width: 500px;
             height: 300px;
-            float: left; }
+            float: left;
+            position: relative; }
+            body section #hiking .slideshow .slide-wrapper .slide .overlay {
+              left: 0;
+              right: 0;
+              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+              overflow: hidden;
+              width: 100%;
+              transform: scale(0); }
+            body section #hiking .slideshow .slide-wrapper .slide:hover .overlay {
+              transform: scale(1); }
+            body section #hiking .slideshow .slide-wrapper .slide .overlay {
+              position: absolute;
+              bottom: 0;
+              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+              overflow: hidden;
+              height: 100%;
+              transition: .3s ease; }
+              body section #hiking .slideshow .slide-wrapper .slide .overlay .text {
+                color: white;
+                font-size: 10px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center; }
+            body section #hiking .slideshow .slide-wrapper .slide .overlay .text {
+              font-size: 25px; }
       body section #hiking .slideshow2 {
         border: 0px solid black;
         width: 500px;
@@ -752,7 +833,32 @@ body {
         body section .slideshow .slide-wrapper .slide {
           width: 1000px;
           height: 200px;
-          float: left; }
+          float: left;
+          position: relative; }
+          body section .slideshow .slide-wrapper .slide .overlay {
+            left: 0;
+            right: 100%;
+            width: 0; }
+          body section .slideshow .slide-wrapper .slide:hover .overlay {
+            width: 100%;
+            right: 0; }
+          body section .slideshow .slide-wrapper .slide .overlay {
+            position: absolute;
+            bottom: 0;
+            background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+            overflow: hidden;
+            height: 100%;
+            transition: .3s ease; }
+            body section .slideshow .slide-wrapper .slide .overlay .text {
+              color: white;
+              font-size: 10px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center; }
+          body section .slideshow .slide-wrapper .slide .overlay .text {
+            font-size: 25px; }
     body section .slideshow2 {
       border: 0px solid black;
       width: 400px;
