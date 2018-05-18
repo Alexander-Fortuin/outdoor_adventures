@@ -224,3 +224,17 @@
     }
   }
 }
+////////////////////////////////////contact page///////////////////
+
+////////////////// button look styling//////////////////
+
+@mixin button {
+  border: 1px solid $black;
+  border-radius: 5%;
+  width: 60px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  @include gradientOne;
+  box-shadow: inset 2.5px 2.5px 2px rgba(255,255,255,0.5),  inset -2.5px -2.5px 4px rgba(0,0,0,0.4),  -0.3px -0.3px 4px rgba(0,0,0,0.5),  2px 2px 10px rgba(0,0,0,0.6);
+}

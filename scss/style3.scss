@@ -1,0 +1,76 @@
+@import "partials/variables", "partials/mixins", "partials/colorfunction", "partials/keyframes";
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Monoton&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Kavivanar');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai|Chewy');
+////////////////////////////////////////////////////////
+body {
+  background-image: url(../images/background/back1.jpg);
+  // width: 1000px;
+  font-family: $defaultfont;
+  height: auto;
+  nav {
+    @include nav;
+    z-index: 2;
+  }
+  section{
+    padding-top: 45px;
+    padding-bottom: 35px;
+    width: 400px;
+    margin: 0 auto;
+    fieldset {
+      background-color: $backgroundblend;
+      legend {
+        color: $darkSnow;
+        font-family: $basefont;
+      }
+      label {
+        font-family: $contactfont;
+        color: $fireBrick;
+        font-size: 25px;
+      }
+      input, select, textarea {
+        width: 15em;
+        background-color: $lilac;
+        border: 1px solid black;
+      }
+      textarea {
+        width: 20em;
+        height: 10em;
+      }
+      #submit {
+        @include button;
+      }
+    }
+  }
+  footer {
+    @include footer;
+  }
+}
+////////////////////////responsive desktopview///////////////
+@media only screen and (min-width: 1000px) {
+  body {
+    height: auto;
+    section{
+      padding-top: 45px;
+      padding-bottom: 35px;
+      width: 400px;
+      text-align: center;
+      label {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    footer {
+      div {
+        ul {
+          margin-left: -40px;
+          li {
+            display: block;
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
