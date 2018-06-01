@@ -93,7 +93,7 @@
     }
   }
 }
-///////////////////// scroll/////////////////////
+///////////////////// scroll sidebar/////////////////////
 
 @mixin scroll {
   height: 59em;
@@ -109,9 +109,9 @@
     display: block;
   }
 }
+//responsive view scroll bar
 @mixin scrollB {
   height: 20em;
-  // width: 100%;
   overflow-y: hidden;
   overflow-x: scroll;
   white-space: nowrap;
@@ -124,7 +124,6 @@
   border: 0px solid;
   background-color: $transparent;
   width: 100%;
-  // height: 180px;
   display: grid;
   grid-template-columns: auto auto 5fr;
   grid-gap: 10px;
@@ -166,6 +165,7 @@
   grid-column-gap: 10px;
   grid-row-gap: 0px;
 }
+
 ////////////////////////////Gallery//////////////////////////////
 
 /////////////////////////overlay code///////////////////////

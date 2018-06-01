@@ -38,7 +38,6 @@ body {
 
 
         h1 {
-          // font-family: 'Cabin Sketch', cursive;
           font-family: $basefont;
           color: $transparent;
           font-size: $heading;
@@ -184,6 +183,7 @@ body {
            display: block;
          }
        }
+       //////////////////////category images///////////
        #images {
            width: 100%;
            h3 {
@@ -207,6 +207,7 @@ body {
            }
          }
     }
+    /////////////footer/////////////////////////
     footer {
       div {
         ul {
