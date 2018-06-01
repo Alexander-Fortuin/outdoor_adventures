@@ -13,331 +13,433 @@ body {
   }
   section {
     margin: 0 auto;
-////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////
     /////////Camping///////////////
-  #camping {
-    padding: 22em;
-    padding-top: 8em;
-    padding-bottom: 10em;
-    grid-row-gap: 1em;
-    grid-column-gap: 5px;
-    display: grid;
-    grid-template-areas:
-    'slide slide test1'
-    'slide slide test2'
-    'test3 test4 test5';
-    @include yrotate;
-    @include xrotate;
-    @include arotate;
-    div {
-      border: 0px solid black;
-      width: 250px;
-      height: 150px;
-    }
-    // slideshow
-    .slideshow {
-      border: 1px solid black;
-      width: 527px;
-      height: 318px;
-      grid-area: slide;
-      @include campslidecode;
-      @include slideshow;
-      .slide-wrapper {
-        animation: campslide 18s ease infinite;
-        width: 2912px;
-        .slide {
-          width: 527px;
-          height: 318px;
-          float: left;
-          @include overlaycenter;
-          @include overlay;
-          .overlay {
-            .text {
-              font-size: 25px;
+    #camping {
+      padding: 7em;
+      padding-top: 8em;
+      padding-bottom: 10em;
+      grid-row-gap: 1em;
+      grid-column-gap: 5px;
+      display: grid;
+      grid-template-areas:
+      'slide slide test1'
+      'slide slide test2'
+      'test3 test4 test5';
+      @include yrotate;
+      @include xrotate;
+      @include arotate;
+      div {
+        border: 0px solid black;
+        width: 250px;
+        height: 150px;
+      }
+      // slideshow
+      .slideshow {
+        border: 1px solid black;
+        width: 527px;
+        height: 318px;
+        grid-area: slide;
+        @include campslidecode;
+        @include slideshow;
+        .slide-wrapper {
+          animation: campslide 18s ease infinite;
+          width: 2912px;
+          .slide {
+            width: 527px;
+            height: 318px;
+            float: left;
+            @include overlaycenter;
+            @include overlay;
+            .overlay {
+              .text {
+                font-size: 25px;
+              }
             }
           }
         }
       }
-    }
-    .box1 {
-      grid-area: test1;
-      @include rotationa;
-      animation-delay: 0s;
-      @include overlaycenter;
-      @include overlay;
-    }
-    .box2 {
-      grid-area: test2;
-      @include rotationa;
-      animation-delay: 0.5s;
-      @include overlaycenter;
-      @include overlay;
-    }
-    .box3 {
-      grid-area: test3;
-      @include rotationy;
-      animation-delay: 4s;
-      @include overlayright;
-      @include overlay;
-    }
-    .box4 {
-      grid-area: test4;
-      @include rotationy;
-      animation-delay: 3.5s;
-      @include overlayleft;
-      @include overlay;
-    }
-    .box5 {
-      grid-area: test5;
-      @include rotationx;
-      animation-delay: 3s;
-      @include overlayright;
-      @include overlay;
-    }
-  }
-/////////////////////////////////////////////////////////////
-  #fishing {
-    display: grid;
-    grid-template-areas:
-    'slide1 slide1 fish fish2'
-    'slide1 slide1 slide2 slide2'
-    'nonefish nonefish slide2 slide2';
-    padding-left: 13em;
-    padding-right: 20em;
-
-    .slideshow {
-      border: 0px solid black;
-      width: 500px;
-      height: 300px;
-      grid-area: slide1;
-      @include fishingslidecode;
-      @include slideshow;
-      .slide-wrapper {
-        animation: fishslide 18s ease infinite;
-        width: 2912px;
-        .slide {
-          width: 500px;
-          height: 300px;
-          float: left;
-          @include overlaycenter;
-          @include overlay;
-          .overlay {
-            .text {
-              font-size: 25px;
-            }
-          }
-        }
+      .box1 {
+        grid-area: test1;
+        @include rotationa;
+        animation-delay: 0s;
+        @include overlaycenter;
+        @include overlay;
       }
-    }
-    .slideshow2 {
-      border: 0px solid black;
-      width: 500px;
-      height: 300px;
-      grid-area: slide2;
-      @include fishingslidecode;
-      @include slideshow;
-      .slide-wrapper {
-        animation: fishslide 18s ease infinite;
-        width: 2912px;
-        .slide {
-          width: 500px;
-          height: 300px;
-          float: left;
-        }
+      .box2 {
+        grid-area: test2;
+        @include rotationa;
+        animation-delay: 0.5s;
+        @include overlaycenter;
+        @include overlay;
       }
-    }
-    .part1 {
-      border: 0px solid black;
-      height: 150px;
-      width: 250px;
-      grid-area: fish;
-      @include overlaycenter;
-      @include overlay;
-    }
-    .part2 {
-      border: 0px solid black;
-      height: 150px;
-      width: 250px;
-      grid-area: fish2;
-      @include overlaycenter;
-      @include overlay;
-    }
-    .part3 {
-      border: 0px solid black;
-      overflow: hidden;
-      width: 500px;
-      height: 150px;
-      grid-area: nonefish;
-      @include overlaycenter;
-      @include overlay;
-    }
-  }
-///////////////////////////////////////////////////////////////////////
-  #hiking {
-    display: grid;
-    grid-template-areas:
-    'hiking hiking hiking2 hiking2'
-    'hiking hiking hiking2 hiking2'
-    'hike2 hike hike hike3';
-    padding-left: 13em;
-    padding-right: 20em;
-    padding-top: 2em;
-    padding-top: 5em;
-    .slideshow {
-      border: 0px solid black;
-      width: 500px;
-      height: 300px;
-      grid-area: hiking;
-      @include fishingslidecode;
-      @include slideshow;
-      .slide-wrapper {
-        animation: fishslide 18s ease infinite;
-        width: 2912px;
-        .slide {
-          width: 500px;
-          height: 300px;
-          float: left;
-          @include overlaycenter;
-          @include overlay;
-          .overlay {
-            .text {
-              font-size: 25px;
-            }
-          }
-        }
+      .box3 {
+        grid-area: test3;
+        @include rotationy;
+        animation-delay: 4s;
+        @include overlayright;
+        @include overlay;
       }
-    }
-    .slideshow2 {
-      border: 0px solid black;
-      width: 500px;
-      height: 300px;
-      grid-area: hiking2;
-      @include fishingslidecode;
-      @include slideshow;
-      .slide-wrapper {
-        animation: fishslide 18s ease infinite;
-        width: 2912px;
-        .slide {
-          width: 500px;
-          height: 300px;
-          float: left;
-        }
-      }
-    }
-
-    .hike {
-      border: 0px solid black;
-      width: 500px;
-      height: 200px;
-      grid-area: hike;
-      @include overlaycenter;
-      @include overlay;
-    }
-    .hike2 {
-      border: 0px solid black;
-      width: 250px;
-      height: 200px;
-      grid-area: hike2;
-      @include overlayright;
-      @include overlay;
-    }
-    .hike3 {
-      border: 0px solid black;
-      width: 250px;
-      height: 200px;
-      grid-area: hike3;
-      @include overlayleft;
-      @include overlay;
-    }
-  }
-  ////////////////////////////////////////////////////////////
-  #rock-climbing {
-    display: grid;
-    grid-template-areas:
-    'topslot topslot topslot topslot'
-    'slot1 slotS slotS slot2'
-    'slot3 slotS slotS slot4';
-    padding-left: 13em;
-    padding-right: 20em;
-    padding-top: 2em;
-  }
-  .img1 {
-    border: 0px solid black;
-    width: 300px;
-    height: 200px;
-    grid-area: slot1;
-    @include overlayright;
-    @include overlay;
-  }
-  .img2 {
-    border: 0px solid black;
-    width: 300px;
-    height: 200px;
-    grid-area: slot2;
-    @include overlayleft;
-    @include overlay;
-  }
-  .img3 {
-    border: 0px solid black;
-    width: 300px;
-    height: 200px;
-    grid-area: slot3;
-    @include overlayleft;
-    @include overlay;
-  }
-  .img4 {
-    border: 0px solid black;
-    width: 300px;
-    height: 200px;
-    grid-area: slot4;
-    @include overlayright;
-    @include overlay;
-  }
-
-
-  .slideshow {
-    border: 0px solid black;
-    width: 1000px;
-    height: 200px;
-    grid-area: topslot;
-    @include rockslidecode;
-    @include slideshow;
-    .slide-wrapper {
-      animation: rockslide 18s ease infinite;
-      width: 10000px;
-      .slide {
-        width: 1000px;
-        height: 200px;
-        float: left;
+      .box4 {
+        grid-area: test4;
+        @include rotationy;
+        animation-delay: 3.5s;
         @include overlayleft;
         @include overlay;
-        .overlay {
-          .text {
-            font-size: 25px;
+      }
+      .box5 {
+        grid-area: test5;
+        @include rotationx;
+        animation-delay: 3s;
+        @include overlayright;
+        @include overlay;
+      }
+    }
+    /////////////////////////////////////////////////////////////
+    #fishing {
+      display: grid;
+      grid-template-areas:
+      'slide1 slide1 fish fish2'
+      'slide1 slide1 slide2 slide2'
+      'nonefish nonefish slide2 slide2';
+      padding-left: 0em;
+      // padding-right: 20em;
+
+      .slideshow {
+        border: 0px solid black;
+        width: 500px;
+        height: 300px;
+        grid-area: slide1;
+        @include fishingslidecode;
+        @include slideshow;
+        .slide-wrapper {
+          animation: fishslide 18s ease infinite;
+          width: 2912px;
+          .slide {
+            width: 500px;
+            height: 300px;
+            float: left;
+            // @include overlaycenter;
+            @include overlay;
+            .overlay {
+              .text {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+      .slideshow2 {
+        border: 0px solid black;
+        width: 500px;
+        height: 300px;
+        grid-area: slide2;
+        @include fishingslidecode;
+        @include slideshow;
+        .slide-wrapper {
+          animation: fishslide 18s ease infinite;
+          width: 2912px;
+          .slide {
+            width: 500px;
+            height: 300px;
+            float: left;
+          }
+        }
+      }
+      .part1 {
+        border: 0px solid black;
+        height: 150px;
+        width: 250px;
+        grid-area: fish;
+        // @include overlaycenter;
+        @include overlay;
+      }
+      .part2 {
+        border: 0px solid black;
+        height: 150px;
+        width: 250px;
+        grid-area: fish2;
+        // @include overlaycenter;
+        @include overlay;
+      }
+      .part3 {
+        border: 0px solid black;
+        overflow: hidden;
+        width: 500px;
+        height: 150px;
+        grid-area: nonefish;
+        // @include overlaycenter;
+        @include overlay;
+      }
+    }
+    ///////////////////////////////////////////////////////////////////////
+    #hiking {
+      display: grid;
+      grid-template-areas:
+      'hiking hiking hiking2 hiking2'
+      'hiking hiking hiking2 hiking2'
+      'hike2 hike hike hike3';
+      padding-left: 0em;
+      // padding-right: 20em;
+      padding-top: 2em;
+      padding-top: 5em;
+      .slideshow {
+        border: 0px solid black;
+        width: 500px;
+        height: 300px;
+        grid-area: hiking;
+        @include fishingslidecode;
+        @include slideshow;
+        .slide-wrapper {
+          animation: fishslide 18s ease infinite;
+          width: 2912px;
+          .slide {
+            width: 500px;
+            height: 300px;
+            float: left;
+            // @include overlaycenter;
+            @include overlay;
+            .overlay {
+              .text {
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+      .slideshow2 {
+        border: 0px solid black;
+        width: 500px;
+        height: 300px;
+        grid-area: hiking2;
+        @include fishingslidecode;
+        @include slideshow;
+        .slide-wrapper {
+          animation: fishslide 18s ease infinite;
+          width: 2912px;
+          .slide {
+            width: 500px;
+            height: 300px;
+            float: left;
+          }
+        }
+      }
+
+      .hike {
+        border: 0px solid black;
+        width: 500px;
+        height: 200px;
+        grid-area: hike;
+        // @include overlaycenter;
+        @include overlay;
+      }
+      .hike2 {
+        border: 0px solid black;
+        width: 250px;
+        height: 200px;
+        grid-area: hike2;
+        // @include overlayright;
+        @include overlay;
+      }
+      .hike3 {
+        border: 0px solid black;
+        width: 250px;
+        height: 200px;
+        grid-area: hike3;
+        // @include overlayleft;
+        @include overlay;
+      }
+    }
+    ////////////////////////////////////////////////////////////
+    #rock-climbing {
+      display: grid;
+      grid-template-areas:
+      'topslot topslot topslot topslot'
+      'slot1 slotS slotS slot2'
+      'slot3 slotS slotS slot4';
+      padding-left: 0em;
+      // padding-left: 13em;
+      padding-right: 0em;
+      // padding-right: 20em;
+      padding-top: 2em;
+    }
+    .img1 {
+      border: 0px solid black;
+      width: 300px;
+      height: 200px;
+      grid-area: slot1;
+      // @include overlayright;
+      @include overlay;
+    }
+    .img2 {
+      border: 0px solid black;
+      width: 300px;
+      height: 200px;
+      grid-area: slot2;
+      // @include overlayleft;
+      @include overlay;
+    }
+    .img3 {
+      border: 0px solid black;
+      width: 300px;
+      height: 200px;
+      grid-area: slot3;
+      // @include overlayleft;
+      @include overlay;
+    }
+    .img4 {
+      border: 0px solid black;
+      width: 300px;
+      height: 200px;
+      grid-area: slot4;
+      // @include overlayright;
+      @include overlay;
+    }
+
+
+    .slideshow {
+      border: 0px solid black;
+      width: 1000px;
+      height: 200px;
+      grid-area: topslot;
+      @include rockslidecode;
+      @include slideshow;
+      .slide-wrapper {
+        animation: rockslide 18s ease infinite;
+        width: 10000px;
+        .slide {
+          width: 1000px;
+          height: 200px;
+          float: left;
+          // @include overlayleft;
+          @include overlay;
+          .overlay {
+            .text {
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+    .slideshow2 {
+      border: 0px solid black;
+      width: 400px;
+      height: 400px;
+      grid-area: slotS;
+      @include rockslidecode2;
+      @include slideshow;
+      .slide-wrapper {
+        animation: rockslide2 18s ease infinite;
+        width: 2912px;
+        .slide {
+          width: 400px;
+          height: 400px;
+          float: left;
+        }
+      }
+    }
+  }
+  footer {
+    @include footer;
+    width: 150%;
+  }
+}
+///////////////////////////////////////////////////////////////////////
+/////////////////////responsive code/////////////////
+
+@media only screen and (min-width: 1000px) {
+  body {
+    section {
+      #camping {
+        padding: 10em;
+        padding-left: 22em;
+      }
+      #fishing {
+        padding-left: 15em;
+        padding-right: 20em;
+      }
+      #hiking {
+        padding-left: 15em;
+        padding-right: 20em;
+      }
+      #rock-climbing {
+        padding-left: 15em;
+        padding-right: 20em;
+      }
+    }
+    footer {
+      div {
+        ul {
+          margin-left: -40px;
+          li {
+            display: block;
+            padding-left: 0px;
           }
         }
       }
     }
   }
-  .slideshow2 {
-    border: 0px solid black;
-    width: 400px;
-    height: 400px;
-    grid-area: slotS;
-    @include rockslidecode2;
-    @include slideshow;
-    .slide-wrapper {
-      animation: rockslide2 18s ease infinite;
-      width: 2912px;
-      .slide {
-        width: 400px;
-        height: 400px;
-        float: left;
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    section {
+      #camping {
+        padding-left: 23em;
+        padding-right: 25em;
+        padding-top: 6em;
+        padding-bottom: 11em;
+      }
+      #fishing {
+        padding-left: 15em;
+        padding-right: 20em;
+        .slideshow {
+          @include overlaycenter;
+        }
+        .part1 {
+          @include overlaycenter;
+        }
+        .part2 {
+          @include overlaycenter;
+        }
+        .part3 {
+          @include overlaycenter;
+        }
+      }
+      #hiking {
+        padding-left: 15em;
+        padding-right: 20em;
+        .slideshow {
+          @include overlaycenter;
+        }
+        .hike {
+          @include overlaycenter;
+        }
+        .hike2 {
+          @include overlayright;
+        }
+        .hike3 {
+          @include overlayleft;
+        }
+      }
+      #rock-climbing {
+        padding-left: 15em;
+        padding-right: 20em;
+        .img1 {
+          @include overlayright;
+        }
+        .img2 {
+          @include overlayleft;
+        }
+        .img3 {
+          @include overlayleft;
+        }
+        .img4 {
+          @include overlayright;
+        }
+        .slideshow {
+          @include overlayleft;
+        }
       }
     }
   }
-}
-footer {
-  @include footer;
-}
 }

@@ -230,7 +230,7 @@ body {
     body footer #related-sites {
       grid-column: 2 / 3; }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1440px) {
   body {
     width: auto; }
     body section {

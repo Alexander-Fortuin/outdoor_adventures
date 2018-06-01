@@ -97,7 +97,7 @@ body {
   body section {
     margin: 0 auto; }
     body section #camping {
-      padding: 22em;
+      padding: 7em;
       padding-top: 8em;
       padding-bottom: 10em;
       grid-row-gap: 1em;
@@ -335,8 +335,7 @@ body {
     body section #fishing {
       display: grid;
       grid-template-areas: 'slide1 slide1 fish fish2' 'slide1 slide1 slide2 slide2' 'nonefish nonefish slide2 slide2';
-      padding-left: 13em;
-      padding-right: 20em; }
+      padding-left: 0em; }
       body section #fishing .slideshow {
         border: 0px solid black;
         width: 500px;
@@ -367,15 +366,6 @@ body {
             height: 300px;
             float: left;
             position: relative; }
-            body section #fishing .slideshow .slide-wrapper .slide .overlay {
-              left: 0;
-              right: 0;
-              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-              overflow: hidden;
-              width: 100%;
-              transform: scale(0); }
-            body section #fishing .slideshow .slide-wrapper .slide:hover .overlay {
-              transform: scale(1); }
             body section #fishing .slideshow .slide-wrapper .slide .overlay {
               position: absolute;
               bottom: 0;
@@ -429,15 +419,6 @@ body {
         grid-area: fish;
         position: relative; }
         body section #fishing .part1 .overlay {
-          left: 0;
-          right: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          width: 100%;
-          transform: scale(0); }
-        body section #fishing .part1:hover .overlay {
-          transform: scale(1); }
-        body section #fishing .part1 .overlay {
           position: absolute;
           bottom: 0;
           background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
@@ -458,15 +439,6 @@ body {
         width: 250px;
         grid-area: fish2;
         position: relative; }
-        body section #fishing .part2 .overlay {
-          left: 0;
-          right: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          width: 100%;
-          transform: scale(0); }
-        body section #fishing .part2:hover .overlay {
-          transform: scale(1); }
         body section #fishing .part2 .overlay {
           position: absolute;
           bottom: 0;
@@ -490,15 +462,6 @@ body {
         grid-area: nonefish;
         position: relative; }
         body section #fishing .part3 .overlay {
-          left: 0;
-          right: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          width: 100%;
-          transform: scale(0); }
-        body section #fishing .part3:hover .overlay {
-          transform: scale(1); }
-        body section #fishing .part3 .overlay {
           position: absolute;
           bottom: 0;
           background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
@@ -516,8 +479,7 @@ body {
     body section #hiking {
       display: grid;
       grid-template-areas: 'hiking hiking hiking2 hiking2' 'hiking hiking hiking2 hiking2' 'hike2 hike hike hike3';
-      padding-left: 13em;
-      padding-right: 20em;
+      padding-left: 0em;
       padding-top: 2em;
       padding-top: 5em; }
       body section #hiking .slideshow {
@@ -550,15 +512,6 @@ body {
             height: 300px;
             float: left;
             position: relative; }
-            body section #hiking .slideshow .slide-wrapper .slide .overlay {
-              left: 0;
-              right: 0;
-              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-              overflow: hidden;
-              width: 100%;
-              transform: scale(0); }
-            body section #hiking .slideshow .slide-wrapper .slide:hover .overlay {
-              transform: scale(1); }
             body section #hiking .slideshow .slide-wrapper .slide .overlay {
               position: absolute;
               bottom: 0;
@@ -612,15 +565,6 @@ body {
         grid-area: hike;
         position: relative; }
         body section #hiking .hike .overlay {
-          left: 0;
-          right: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          width: 100%;
-          transform: scale(0); }
-        body section #hiking .hike:hover .overlay {
-          transform: scale(1); }
-        body section #hiking .hike .overlay {
           position: absolute;
           bottom: 0;
           background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
@@ -641,13 +585,6 @@ body {
         height: 200px;
         grid-area: hike2;
         position: relative; }
-        body section #hiking .hike2 .overlay {
-          left: 100%;
-          right: 0;
-          width: 0; }
-        body section #hiking .hike2:hover .overlay {
-          width: 100%;
-          left: 0; }
         body section #hiking .hike2 .overlay {
           position: absolute;
           bottom: 0;
@@ -670,13 +607,6 @@ body {
         grid-area: hike3;
         position: relative; }
         body section #hiking .hike3 .overlay {
-          left: 0;
-          right: 100%;
-          width: 0; }
-        body section #hiking .hike3:hover .overlay {
-          width: 100%;
-          right: 0; }
-        body section #hiking .hike3 .overlay {
           position: absolute;
           bottom: 0;
           background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
@@ -694,8 +624,8 @@ body {
     body section #rock-climbing {
       display: grid;
       grid-template-areas: 'topslot topslot topslot topslot' 'slot1 slotS slotS slot2' 'slot3 slotS slotS slot4';
-      padding-left: 13em;
-      padding-right: 20em;
+      padding-left: 0em;
+      padding-right: 0em;
       padding-top: 2em; }
     body section .img1 {
       border: 0px solid black;
@@ -703,13 +633,6 @@ body {
       height: 200px;
       grid-area: slot1;
       position: relative; }
-      body section .img1 .overlay {
-        left: 100%;
-        right: 0;
-        width: 0; }
-      body section .img1:hover .overlay {
-        width: 100%;
-        left: 0; }
       body section .img1 .overlay {
         position: absolute;
         bottom: 0;
@@ -732,13 +655,6 @@ body {
       grid-area: slot2;
       position: relative; }
       body section .img2 .overlay {
-        left: 0;
-        right: 100%;
-        width: 0; }
-      body section .img2:hover .overlay {
-        width: 100%;
-        right: 0; }
-      body section .img2 .overlay {
         position: absolute;
         bottom: 0;
         background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
@@ -760,13 +676,6 @@ body {
       grid-area: slot3;
       position: relative; }
       body section .img3 .overlay {
-        left: 0;
-        right: 100%;
-        width: 0; }
-      body section .img3:hover .overlay {
-        width: 100%;
-        right: 0; }
-      body section .img3 .overlay {
         position: absolute;
         bottom: 0;
         background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
@@ -787,13 +696,6 @@ body {
       height: 200px;
       grid-area: slot4;
       position: relative; }
-      body section .img4 .overlay {
-        left: 100%;
-        right: 0;
-        width: 0; }
-      body section .img4:hover .overlay {
-        width: 100%;
-        left: 0; }
       body section .img4 .overlay {
         position: absolute;
         bottom: 0;
@@ -835,13 +737,6 @@ body {
           height: 200px;
           float: left;
           position: relative; }
-          body section .slideshow .slide-wrapper .slide .overlay {
-            left: 0;
-            right: 100%;
-            width: 0; }
-          body section .slideshow .slide-wrapper .slide:hover .overlay {
-            width: 100%;
-            right: 0; }
           body section .slideshow .slide-wrapper .slide .overlay {
             position: absolute;
             bottom: 0;
@@ -894,7 +789,8 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: auto auto 5fr;
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    width: 150%; }
     body footer div {
       display: inline-block;
       padding: 5px; }
@@ -913,5 +809,142 @@ body {
       grid-column: 1 / 2; }
     body footer #related-sites {
       grid-column: 2 / 3; }
+
+@media only screen and (min-width: 1000px) {
+  body section #camping {
+    padding: 10em;
+    padding-left: 22em; }
+  body section #fishing {
+    padding-left: 15em;
+    padding-right: 20em; }
+  body section #hiking {
+    padding-left: 15em;
+    padding-right: 20em; }
+  body section #rock-climbing {
+    padding-left: 15em;
+    padding-right: 20em; }
+  body footer div ul {
+    margin-left: -40px; }
+    body footer div ul li {
+      display: block;
+      padding-left: 0px; } }
+@media only screen and (min-width: 1440px) {
+  body section #camping {
+    padding-left: 23em;
+    padding-right: 25em;
+    padding-top: 6em;
+    padding-bottom: 11em; }
+  body section #fishing {
+    padding-left: 15em;
+    padding-right: 20em; }
+    body section #fishing .slideshow .overlay {
+      left: 0;
+      right: 0;
+      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+      overflow: hidden;
+      width: 100%;
+      transform: scale(0); }
+    body section #fishing .slideshow:hover .overlay {
+      transform: scale(1); }
+    body section #fishing .part1 .overlay {
+      left: 0;
+      right: 0;
+      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+      overflow: hidden;
+      width: 100%;
+      transform: scale(0); }
+    body section #fishing .part1:hover .overlay {
+      transform: scale(1); }
+    body section #fishing .part2 .overlay {
+      left: 0;
+      right: 0;
+      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+      overflow: hidden;
+      width: 100%;
+      transform: scale(0); }
+    body section #fishing .part2:hover .overlay {
+      transform: scale(1); }
+    body section #fishing .part3 .overlay {
+      left: 0;
+      right: 0;
+      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+      overflow: hidden;
+      width: 100%;
+      transform: scale(0); }
+    body section #fishing .part3:hover .overlay {
+      transform: scale(1); }
+  body section #hiking {
+    padding-left: 15em;
+    padding-right: 20em; }
+    body section #hiking .slideshow .overlay {
+      left: 0;
+      right: 0;
+      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+      overflow: hidden;
+      width: 100%;
+      transform: scale(0); }
+    body section #hiking .slideshow:hover .overlay {
+      transform: scale(1); }
+    body section #hiking .hike .overlay {
+      left: 0;
+      right: 0;
+      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
+      overflow: hidden;
+      width: 100%;
+      transform: scale(0); }
+    body section #hiking .hike:hover .overlay {
+      transform: scale(1); }
+    body section #hiking .hike2 .overlay {
+      left: 100%;
+      right: 0;
+      width: 0; }
+    body section #hiking .hike2:hover .overlay {
+      width: 100%;
+      left: 0; }
+    body section #hiking .hike3 .overlay {
+      left: 0;
+      right: 100%;
+      width: 0; }
+    body section #hiking .hike3:hover .overlay {
+      width: 100%;
+      right: 0; }
+  body section #rock-climbing {
+    padding-left: 15em;
+    padding-right: 20em; }
+    body section #rock-climbing .img1 .overlay {
+      left: 100%;
+      right: 0;
+      width: 0; }
+    body section #rock-climbing .img1:hover .overlay {
+      width: 100%;
+      left: 0; }
+    body section #rock-climbing .img2 .overlay {
+      left: 0;
+      right: 100%;
+      width: 0; }
+    body section #rock-climbing .img2:hover .overlay {
+      width: 100%;
+      right: 0; }
+    body section #rock-climbing .img3 .overlay {
+      left: 0;
+      right: 100%;
+      width: 0; }
+    body section #rock-climbing .img3:hover .overlay {
+      width: 100%;
+      right: 0; }
+    body section #rock-climbing .img4 .overlay {
+      left: 100%;
+      right: 0;
+      width: 0; }
+    body section #rock-climbing .img4:hover .overlay {
+      width: 100%;
+      left: 0; }
+    body section #rock-climbing .slideshow .overlay {
+      left: 0;
+      right: 100%;
+      width: 0; }
+    body section #rock-climbing .slideshow:hover .overlay {
+      width: 100%;
+      right: 0; } }
 
 /*# sourceMappingURL=style2.css.map */
