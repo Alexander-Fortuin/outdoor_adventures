@@ -5,429 +5,489 @@
 ////////////////////////////////////////////////////////
 body {
   background-image: url(../images/background/back1.jpg);
+  // width: 1000px;
   font-family: $defaultfont;
   nav {
     @include nav;
     z-index: 2;
+    position: fixed;
   }
   section {
-    margin: 0 auto;
-    ////////////////////////////////////////////////////////////////////////////////
-    /////////Camping///////////////
-    #camping {
-      padding: 7em;
-      padding-top: 8em;
-      padding-bottom: 10em;
-      grid-row-gap: 1em;
-      grid-column-gap: 5px;
-      display: grid;
-      grid-template-areas:
-      'slide slide test1'
-      'slide slide test2'
-      'test3 test4 test5';
-      @include yrotate;
-      @include xrotate;
-      @include arotate;
-      div {
-        border: 0px solid black;
-        width: 250px;
-        height: 150px;
-      }
-      // slideshow
-      .slideshow {
-        border: 1px solid black;
-        width: 527px;
-        height: 318px;
-        grid-area: slide;
-        @include campslidecode;
-        @include slideshow;
-        .slide-wrapper {
-          animation: campslide 18s ease infinite;
-          width: 2912px;
-          .slide {
-            width: 527px;
-            height: 318px;
-            float: left;
-            @include overlaycenter;
-            @include overlay;
-            .overlay {
-              .text {
-                font-size: 25px;
-              }
-            }
-          }
-        }
-      }
-      // other images
-      .box1 {
-        grid-area: test1;
-        @include rotationa;
-        animation-delay: 0s;
-        @include overlaycenter;
-        @include overlay;
-      }
-      .box2 {
-        grid-area: test2;
-        @include rotationa;
-        animation-delay: 0.5s;
-        @include overlaycenter;
-        @include overlay;
-      }
-      .box3 {
-        grid-area: test3;
-        @include rotationy;
-        animation-delay: 4s;
-        @include overlayright;
-        @include overlay;
-      }
-      .box4 {
-        grid-area: test4;
-        @include rotationy;
-        animation-delay: 3.5s;
-        @include overlayleft;
-        @include overlay;
-      }
-      .box5 {
-        grid-area: test5;
-        @include rotationx;
-        animation-delay: 3s;
-        @include overlayright;
-        @include overlay;
-      }
+    margin-left: -3px;
+    padding-top: 5em;
+    h2 {
+      font-family: $basefont;
     }
-    /////////////////////////////////////////////////////////////
-    #fishing {
-      display: grid;
-      grid-template-areas:
-      'slide1 slide1 fish fish2'
-      'slide1 slide1 slide2 slide2'
-      'nonefish nonefish slide2 slide2';
-      padding-left: 0em;
-
-      // slideshow
-      .slideshow {
-        border: 0px solid black;
-        width: 500px;
-        height: 300px;
-        grid-area: slide1;
-        @include fishingslidecode;
-        @include slideshow;
-        .slide-wrapper {
-          animation: fishslide 18s ease infinite;
-          width: 2912px;
-          .slide {
-            width: 500px;
-            height: 300px;
-            float: left;
-            @include overlay;
-            .overlay {
-              .text {
-                font-size: 25px;
-              }
-            }
-          }
-        }
-      }
-      .slideshow2 {
-        border: 0px solid black;
-        width: 500px;
-        height: 300px;
-        grid-area: slide2;
-        @include fishingslidecode;
-        @include slideshow;
-        .slide-wrapper {
-          animation: fishslide 18s ease infinite;
-          width: 2912px;
-          .slide {
-            width: 500px;
-            height: 300px;
-            float: left;
-          }
-        }
-      }
-      // other images
-      .part1 {
-        border: 0px solid black;
-        height: 150px;
-        width: 250px;
-        grid-area: fish;
-        @include overlay;
-      }
-      .part2 {
-        border: 0px solid black;
-        height: 150px;
-        width: 250px;
-        grid-area: fish2;
-        @include overlay;
-      }
-      .part3 {
-        border: 0px solid black;
-        overflow: hidden;
-        width: 500px;
-        height: 150px;
-        grid-area: nonefish;
-        @include overlay;
-      }
-    }
-    ///////////////////////////////////////////////////////////////////////
-    #hiking {
-      display: grid;
-      grid-template-areas:
-      'hiking hiking hiking2 hiking2'
-      'hiking hiking hiking2 hiking2'
-      'hike2 hike hike hike3';
-      padding-left: 0em;
-      padding-top: 2em;
-      padding-top: 5em;
-
-      //slideshow
-      .slideshow {
-        border: 0px solid black;
-        width: 500px;
-        height: 300px;
-        grid-area: hiking;
-        @include fishingslidecode;
-        @include slideshow;
-        .slide-wrapper {
-          animation: fishslide 18s ease infinite;
-          width: 2912px;
-          .slide {
-            width: 500px;
-            height: 300px;
-            float: left;
-            @include overlay;
-            .overlay {
-              .text {
-                font-size: 25px;
-              }
-            }
-          }
-        }
-      }
-      .slideshow2 {
-        border: 0px solid black;
-        width: 500px;
-        height: 300px;
-        grid-area: hiking2;
-        @include fishingslidecode;
-        @include slideshow;
-        .slide-wrapper {
-          animation: fishslide 18s ease infinite;
-          width: 2912px;
-          .slide {
-            width: 500px;
-            height: 300px;
-            float: left;
-          }
-        }
-      }
-      //other images
-      .hike {
-        border: 0px solid black;
-        width: 500px;
-        height: 200px;
-        grid-area: hike;
-        @include overlay;
-      }
-      .hike2 {
-        border: 0px solid black;
-        width: 250px;
-        height: 200px;
-        grid-area: hike2;
-        @include overlay;
-      }
-      .hike3 {
-        border: 0px solid black;
-        width: 250px;
-        height: 200px;
-        grid-area: hike3;
-        @include overlay;
-      }
-    }
-    ////////////////////////////////////////////////////////////
-    #rock-climbing {
-      display: grid;
-      grid-template-areas:
-      'topslot topslot topslot topslot'
-      'slot1 slotS slotS slot2'
-      'slot3 slotS slotS slot4';
-      padding-left: 0em;
-      padding-right: 0em;
-      padding-top: 2em;
-    }
-
-    //other images
+//////////////////////////////////////////////////////
+    //Camping
+    ////////////////////
     .img1 {
-      border: 0px solid black;
-      width: 300px;
-      height: 200px;
-      grid-area: slot1;
-      @include overlay;
+      @include image;
+      background-image: url('../images/locations/Grootvadersbos-Camping.jpg');
+
+
+      @include gallery;
+      .box1 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/Grootvadersbos-Camping.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box1.down {
+      	@include down;
+      }
+      .box1.up {
+      	@include up;
+      }
     }
+    ////////////////////
     .img2 {
-      border: 0px solid black;
-      width: 300px;
-      height: 200px;
-      grid-area: slot2;
-      @include overlay;
+      @include image;
+      background-image: url('../images/locations/River-Goose-Camping.jpg');
+
+
+      @include gallery;
+      .box2 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/River-Goose-Camping.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box2.down {
+      	@include down;
+      }
+      .box2.up {
+      	@include up;
+      }
     }
+    ////////////////////
     .img3 {
-      border: 0px solid black;
-      width: 300px;
-      height: 200px;
-      grid-area: slot3;
-      @include overlay;
+      @include image;
+      background-image: url('../images/locations/Oewerzicht.jpg');
+
+
+      @include gallery;
+      .box3 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/Oewerzicht.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box3.down {
+      	@include down;
+      }
+      .box3.up {
+      	@include up;
+      }
     }
+//////////////////////////////////////////////////////
+    //Fishing
+    ////////////////////
     .img4 {
-      border: 0px solid black;
-      width: 300px;
-      height: 200px;
-      grid-area: slot4;
-      @include overlay;
+      @include image;
+      background-image: url('../images/locations/romanrocks.jpg');
+
+
+      @include gallery;
+      .box4 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/romanrocks.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box4.down {
+      	@include down;
+      }
+      .box4.up {
+      	@include up;
+      }
+    }
+    ////////////////////
+    .img5 {
+      @include image;
+      background-image: url('../images/locations/riverpoint.jpg');
+
+
+      @include gallery;
+      .box5 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/riverpoint.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box5.down {
+      	@include down;
+      }
+      .box5.up {
+      	@include up;
+      }
+    }
+    ////////////////////
+    .img6 {
+      @include image;
+      background-image: url('../images/locations/Brazenhead.jpg');
+
+
+      @include gallery;
+      .box6 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/Brazenhead.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box6.down {
+      	@include down;
+      }
+      .box6.up {
+      	@include up;
+      }
+    }
+//////////////////////////////////////////////////////
+    //Hiking
+    ////////////////////
+    .img7 {
+      @include image;
+      background-image: url('../images/locations/mafadi2.jpg');
+
+
+      @include gallery;
+      .box7 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/mafadi2.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box7.down {
+      	@include down;
+      }
+      .box7.up {
+      	@include up;
+      }
+    }
+    ////////////////////
+    .img8 {
+      @include image;
+      background-image: url('../images/hiking/hiking5.jpg');
+
+
+      @include gallery;
+      .box8 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/hiking/hiking5.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box8.down {
+      	@include down;
+      }
+      .box8.up {
+      	@include up;
+      }
+    }
+    ////////////////////
+    .img9 {
+      @include image;
+      background-image: url('../images/locations/chapman.jpg');
+
+
+      @include gallery;
+      .box9 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/chapman.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box9.down {
+      	@include down;
+      }
+      .box9.up {
+      	@include up;
+      }
+    }
+//////////////////////////////////////////////////////
+    //Rock Climbing
+    ////////////////////
+    .img10 {
+      @include image;
+      background-image: url('../images/locations/De_Pakhuys.jpg');
+
+
+      @include gallery;
+      .box10 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/De_Pakhuys.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box10.down {
+      	@include down;
+      }
+      .box10.up {
+      	@include up;
+      }
+    }
+    ////////////////////
+    .img11 {
+      @include image;
+      background-image: url('../images/locations/cederberg.jpg');
+
+
+      @include gallery;
+      .box11 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/cederberg.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box11.down {
+      	@include down;
+      }
+      .box11.up {
+      	@include up;
+      }
+    }
+    ////////////////////
+    .img12 {
+      @include image;
+      background-image: url('../images/locations/Roc_n_Rope.jpg');
+
+
+      @include gallery;
+      .box12 {
+      	@include box;
+      	&::before {
+      		background-image: url('../images/locations/Roc_n_Rope.jpg');
+      		@include firstbefore;
+      	}
+      }
+
+      .box12.down {
+      	@include down;
+      }
+      .box12.up {
+      	@include up;
+      }
     }
 
-    //slideshow
-    .slideshow {
-      border: 0px solid black;
-      width: 1000px;
-      height: 200px;
-      grid-area: topslot;
-      @include rockslidecode;
-      @include slideshow;
-      .slide-wrapper {
-        animation: rockslide 18s ease infinite;
-        width: 10000px;
-        .slide {
-          width: 1000px;
-          height: 200px;
-          float: left;
-          @include overlay;
-          .overlay {
-            .text {
-              font-size: 25px;
-            }
-          }
-        }
-      }
-    }
-    .slideshow2 {
-      border: 0px solid black;
-      width: 400px;
-      height: 400px;
-      grid-area: slotS;
-      @include rockslidecode2;
-      @include slideshow;
-      .slide-wrapper {
-        animation: rockslide2 18s ease infinite;
-        width: 2912px;
-        .slide {
-          width: 400px;
-          height: 400px;
-          float: left;
-        }
-      }
-    }
   }
   footer {
     @include footer;
-    width: 150%;
   }
 }
-///////////////////////////////////////////////////////////////////////
-/////////////////////responsive code/////////////////
-
+@media only screen and (min-width: 450px) {
+  body {
+    section {
+      // margin-left: 5em;
+      .img1 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img2 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img3 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img4 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img5 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img6 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img7 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img8 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img9 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img10 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img11 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+      .img12 {
+        @include gallerydesktop;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 400px) {
+  body {
+    section {
+      // margin-left: 5em;
+      .img1 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img2 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img3 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img4 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img5 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img6 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img7 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img8 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img9 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img10 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img11 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+      .img12 {
+        @include gallerydesktopsmall;
+        margin: 0 auto;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 1000px) {
   body {
     section {
-      #camping {
-        padding: 10em;
-        padding-left: 22em;
+      // margin-left: 5em;
+      .img1 {
+        @include gallerydesktop;
       }
-      #fishing {
-        padding-left: 15em;
-        padding-right: 20em;
+      .img2 {
+        @include gallerydesktop;
       }
-      #hiking {
-        padding-left: 15em;
-        padding-right: 20em;
+      .img3 {
+        @include gallerydesktopsmall;
       }
-      #rock-climbing {
-        padding-left: 15em;
-        padding-right: 20em;
+      .img4 {
+        @include gallerydesktop;
       }
-    }
-    footer {
-      div {
-        ul {
-          margin-left: -40px;
-          li {
-            display: block;
-            padding-left: 0px;
-          }
-        }
+      .img5 {
+        @include gallerydesktop;
+      }
+      .img6 {
+        @include gallerydesktopsmall;
+      }
+      .img7 {
+        @include gallerydesktop;
+      }
+      .img8 {
+        @include gallerydesktop;
+      }
+      .img9 {
+        @include gallerydesktopsmall;
+      }
+      .img10 {
+        @include gallerydesktop;
+      }
+      .img11 {
+        @include gallerydesktop;
+      }
+      .img12 {
+        @include gallerydesktopsmall;
       }
     }
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1400px) {
   body {
     section {
-      #camping {
-        padding-left: 23em;
-        padding-right: 25em;
-        padding-top: 6em;
-        padding-bottom: 11em;
+      // margin-left: 5em;
+      .img1 {
+        @include gallerydesktop;
       }
-      #fishing {
-        padding-left: 15em;
-        padding-right: 20em;
-        .slideshow {
-          @include overlaycenter;
-        }
-        .part1 {
-          @include overlaycenter;
-        }
-        .part2 {
-          @include overlaycenter;
-        }
-        .part3 {
-          @include overlaycenter;
-        }
+      .img2 {
+        @include gallerydesktop;
       }
-      #hiking {
-        padding-left: 15em;
-        padding-right: 20em;
-        .slideshow {
-          @include overlaycenter;
-        }
-        .hike {
-          @include overlaycenter;
-        }
-        .hike2 {
-          @include overlayright;
-        }
-        .hike3 {
-          @include overlayleft;
-        }
+      .img3 {
+        @include gallerydesktop;
       }
-      #rock-climbing {
-        padding-left: 15em;
-        padding-right: 20em;
-        .img1 {
-          @include overlayright;
-        }
-        .img2 {
-          @include overlayleft;
-        }
-        .img3 {
-          @include overlayleft;
-        }
-        .img4 {
-          @include overlayright;
-        }
-        .slideshow {
-          @include overlayleft;
-        }
+      .img4 {
+        @include gallerydesktop;
+      }
+      .img5 {
+        @include gallerydesktop;
+      }
+      .img6 {
+        @include gallerydesktop;
+      }
+      .img7 {
+        @include gallerydesktop;
+      }
+      .img8 {
+        @include gallerydesktop;
+      }
+      .img9 {
+        @include gallerydesktop;
+      }
+      .img10 {
+        @include gallerydesktop;
+      }
+      .img11 {
+        @include gallerydesktop;
+      }
+      .img12 {
+        @include gallerydesktop;
       }
     }
   }

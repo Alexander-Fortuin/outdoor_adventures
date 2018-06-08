@@ -133,24 +133,17 @@ body {
       grid-area: images;
       border: 0px solid blue;
       background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-      width: 100%; }
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 10% 90%; }
       body section #images h3 {
-        display: inline-block;
-        font-family: "Lobster", cursive;
-        font-size: 17px; }
-        body section #images h3:nth-child(1) {
-          margin-left: 6em; }
-        body section #images h3:nth-child(2) {
-          margin-left: 10em; }
-        body section #images h3:nth-child(3) {
-          margin-left: 10em; }
-        body section #images h3:nth-child(4) {
-          margin-left: 9em; }
+        margin-left: 3em; }
       body section #images .homeImg {
-        height: 170px;
-        width: 170px;
-        display: inline-block;
-        margin-left: 54px; }
+        height: 100%;
+        width: 100%; }
+    body section .content {
+      width: 100%; }
     body section #camping {
       background-color: #b1706761;
       grid-area: section; }
@@ -194,14 +187,16 @@ body {
       body section #scroll-two h5 {
         font-family: "Cabin Sketch", cursive; }
     body section .sidebar {
-      height: 20em;
       overflow-y: hidden;
       overflow-x: scroll;
       white-space: nowrap; }
       body section .sidebar .heading {
         display: none; }
+      body section .sidebar .heading {
+        width: 100%;
+        height: 100%; }
       body section .sidebar .picture {
-        width: 500px;
+        width: 100%;
         height: 300px;
         display: inline-block; }
   body footer {
@@ -230,19 +225,22 @@ body {
     body footer #related-sites {
       grid-column: 2 / 3; }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1050px) {
   body {
     width: auto; }
     body section {
-      grid-template-areas: 'images images images images images images images images' 'section section section section section section section sidebar' 'sectiontwo sectiontwo sectiontwo sectiontwo sectiontwo sectiontwo sectiontwo sidebar' 'sectionthree sectionthree sectionthree sectionthree sectionthree sectionthree sectionthree sidebarTwo' 'sectionfour sectionfour sectionfour sectionfour sectionfour sectionfour sectionfour sidebarTwo';
+      grid-template-areas: 'images images images images' 'section section section sidebar' 'sectiontwo sectiontwo sectiontwo sidebar' 'sectionthree sectionthree sectionthree sidebarTwo' 'sectionfour sectionfour sectionfour sidebarTwo';
       grid-column-gap: 10px;
       grid-row-gap: 0px; }
+      body section #images h3 {
+        margin-left: 6em; }
       body section .sidebar {
         height: 59em;
-        width: 360px;
         overflow-y: scroll;
         overflow-x: hidden;
-        white-space: nowrap; }
+        white-space: nowrap;
+        margin-left: 1em;
+        float: right; }
         body section .sidebar .heading {
           height: 50px;
           margin-top: -10px;
@@ -250,24 +248,8 @@ body {
           padding-left: 10px;
           display: block; }
         body section .sidebar .picture {
-          width: 361px;
           height: 200px;
           display: block; }
-      body section #images {
-        width: 100%; }
-        body section #images h3 {
-          font-family: "Lobster", cursive; }
-          body section #images h3:nth-child(1) {
-            margin-left: 10em; }
-          body section #images h3:nth-child(2) {
-            margin-left: 18em; }
-          body section #images h3:nth-child(3) {
-            margin-left: 17em; }
-          body section #images h3:nth-child(4) {
-            margin-left: 17em; }
-        body section #images .homeImg {
-          height: 250px;
-          width: 300px; }
     body footer div ul {
       margin-left: -40px; }
       body footer div ul li {

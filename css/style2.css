@@ -10,7 +10,8 @@ body {
     animation-name: fade-in;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
-    z-index: 2; }
+    z-index: 2;
+    position: fixed; }
 @keyframes fade-in {
   from {
     opacity: 0; }
@@ -95,702 +96,533 @@ body {
       body nav .navbar .icon-box:hover .link {
         display: inherit; }
   body section {
-    margin: 0 auto; }
-    body section #camping {
-      padding: 7em;
-      padding-top: 8em;
-      padding-bottom: 10em;
-      grid-row-gap: 1em;
-      grid-column-gap: 5px;
-      display: grid;
-      grid-template-areas: 'slide slide test1' 'slide slide test2' 'test3 test4 test5'; }
-@keyframes rotationy {
-  75% {
-    transform: rotateY(0deg); }
-  100% {
-    transform: rotateY(-360deg); } }
-@keyframes rotationx {
-  25% {
-    transform: rotateX(0deg); }
-  50% {
-    transform: rotateX(360deg); }
-  75% {
-    transform: rotateY(1deg); }
-  100% {
-    transform: rotateY(355deg); } }
-@keyframes rotationa {
-  75% {
-    transform: rotateX(0deg); }
-  100% {
-    transform: rotateX(360deg); } }
-      body section #camping div {
-        border: 0px solid black;
-        width: 250px;
-        height: 150px; }
-      body section #camping .slideshow {
-        border: 1px solid black;
-        width: 527px;
-        height: 318px;
-        grid-area: slide;
-        overflow: hidden;
-        margin: 0; }
-@keyframes campslide {
-  20% {
-    margin-left: 0px; }
-  30% {
-    margin-left: -527px; }
-  50% {
-    margin-left: -527px; }
-  60% {
-    margin-left: -1054px; }
-  70% {
-    margin-left: -1054px; }
-  80% {
-    margin-left: -1581px; }
-  90% {
-    margin-left: -1581px; } }
-        body section #camping .slideshow .slide-wrapper {
-          animation: campslide 18s ease infinite;
-          width: 2912px; }
-          body section #camping .slideshow .slide-wrapper .slide {
-            width: 527px;
-            height: 318px;
-            float: left;
-            position: relative; }
-            body section #camping .slideshow .slide-wrapper .slide .overlay {
-              left: 0;
-              right: 0;
-              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-              overflow: hidden;
-              width: 100%;
-              transform: scale(0); }
-            body section #camping .slideshow .slide-wrapper .slide:hover .overlay {
-              transform: scale(1); }
-            body section #camping .slideshow .slide-wrapper .slide .overlay {
-              position: absolute;
-              bottom: 0;
-              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-              overflow: hidden;
-              height: 100%;
-              transition: .3s ease; }
-              body section #camping .slideshow .slide-wrapper .slide .overlay .text {
-                color: white;
-                font-size: 10px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center; }
-            body section #camping .slideshow .slide-wrapper .slide .overlay .text {
-              font-size: 25px; }
-      body section #camping .box1 {
-        grid-area: test1;
-        animation-name: rotationa;
-        animation-duration: 4s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0s;
-        position: relative; }
-        body section #camping .box1 .overlay {
-          left: 0;
-          right: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          width: 100%;
-          transform: scale(0); }
-        body section #camping .box1:hover .overlay {
-          transform: scale(1); }
-        body section #camping .box1 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #camping .box1 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-      body section #camping .box2 {
-        grid-area: test2;
-        animation-name: rotationa;
-        animation-duration: 4s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 0.5s;
-        position: relative; }
-        body section #camping .box2 .overlay {
-          left: 0;
-          right: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          width: 100%;
-          transform: scale(0); }
-        body section #camping .box2:hover .overlay {
-          transform: scale(1); }
-        body section #camping .box2 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #camping .box2 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-      body section #camping .box3 {
-        grid-area: test3;
-        animation-name: rotationy;
-        animation-duration: 4s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 4s;
-        position: relative; }
-        body section #camping .box3 .overlay {
-          left: 100%;
-          right: 0;
-          width: 0; }
-        body section #camping .box3:hover .overlay {
-          width: 100%;
-          left: 0; }
-        body section #camping .box3 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #camping .box3 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-      body section #camping .box4 {
-        grid-area: test4;
-        animation-name: rotationy;
-        animation-duration: 4s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 3.5s;
-        position: relative; }
-        body section #camping .box4 .overlay {
-          left: 0;
-          right: 100%;
-          width: 0; }
-        body section #camping .box4:hover .overlay {
-          width: 100%;
-          right: 0; }
-        body section #camping .box4 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #camping .box4 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-      body section #camping .box5 {
-        grid-area: test5;
-        animation-name: rotationx;
-        animation-duration: 4s;
-        animation-timing-function: ease-in-out;
-        animation-delay: 3s;
-        position: relative; }
-        body section #camping .box5 .overlay {
-          left: 100%;
-          right: 0;
-          width: 0; }
-        body section #camping .box5:hover .overlay {
-          width: 100%;
-          left: 0; }
-        body section #camping .box5 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #camping .box5 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-    body section #fishing {
-      display: grid;
-      grid-template-areas: 'slide1 slide1 fish fish2' 'slide1 slide1 slide2 slide2' 'nonefish nonefish slide2 slide2';
-      padding-left: 0em; }
-      body section #fishing .slideshow {
-        border: 0px solid black;
-        width: 500px;
-        height: 300px;
-        grid-area: slide1;
-        overflow: hidden;
-        margin: 0; }
-@keyframes fishslide {
-  20% {
-    margin-left: 0px; }
-  30% {
-    margin-left: -500px; }
-  50% {
-    margin-left: -500px; }
-  60% {
-    margin-left: -1000px; }
-  70% {
-    margin-left: -1000px; }
-  80% {
-    margin-left: -1500px; }
-  90% {
-    margin-left: -1500px; } }
-        body section #fishing .slideshow .slide-wrapper {
-          animation: fishslide 18s ease infinite;
-          width: 2912px; }
-          body section #fishing .slideshow .slide-wrapper .slide {
-            width: 500px;
-            height: 300px;
-            float: left;
-            position: relative; }
-            body section #fishing .slideshow .slide-wrapper .slide .overlay {
-              position: absolute;
-              bottom: 0;
-              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-              overflow: hidden;
-              height: 100%;
-              transition: .3s ease; }
-              body section #fishing .slideshow .slide-wrapper .slide .overlay .text {
-                color: white;
-                font-size: 10px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center; }
-            body section #fishing .slideshow .slide-wrapper .slide .overlay .text {
-              font-size: 25px; }
-      body section #fishing .slideshow2 {
-        border: 0px solid black;
-        width: 500px;
-        height: 300px;
-        grid-area: slide2;
-        overflow: hidden;
-        margin: 0; }
-@keyframes fishslide {
-  20% {
-    margin-left: 0px; }
-  30% {
-    margin-left: -500px; }
-  50% {
-    margin-left: -500px; }
-  60% {
-    margin-left: -1000px; }
-  70% {
-    margin-left: -1000px; }
-  80% {
-    margin-left: -1500px; }
-  90% {
-    margin-left: -1500px; } }
-        body section #fishing .slideshow2 .slide-wrapper {
-          animation: fishslide 18s ease infinite;
-          width: 2912px; }
-          body section #fishing .slideshow2 .slide-wrapper .slide {
-            width: 500px;
-            height: 300px;
-            float: left; }
-      body section #fishing .part1 {
-        border: 0px solid black;
-        height: 150px;
-        width: 250px;
-        grid-area: fish;
-        position: relative; }
-        body section #fishing .part1 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #fishing .part1 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-      body section #fishing .part2 {
-        border: 0px solid black;
-        height: 150px;
-        width: 250px;
-        grid-area: fish2;
-        position: relative; }
-        body section #fishing .part2 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #fishing .part2 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-      body section #fishing .part3 {
-        border: 0px solid black;
-        overflow: hidden;
-        width: 500px;
-        height: 150px;
-        grid-area: nonefish;
-        position: relative; }
-        body section #fishing .part3 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #fishing .part3 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-    body section #hiking {
-      display: grid;
-      grid-template-areas: 'hiking hiking hiking2 hiking2' 'hiking hiking hiking2 hiking2' 'hike2 hike hike hike3';
-      padding-left: 0em;
-      padding-top: 2em;
-      padding-top: 5em; }
-      body section #hiking .slideshow {
-        border: 0px solid black;
-        width: 500px;
-        height: 300px;
-        grid-area: hiking;
-        overflow: hidden;
-        margin: 0; }
-@keyframes fishslide {
-  20% {
-    margin-left: 0px; }
-  30% {
-    margin-left: -500px; }
-  50% {
-    margin-left: -500px; }
-  60% {
-    margin-left: -1000px; }
-  70% {
-    margin-left: -1000px; }
-  80% {
-    margin-left: -1500px; }
-  90% {
-    margin-left: -1500px; } }
-        body section #hiking .slideshow .slide-wrapper {
-          animation: fishslide 18s ease infinite;
-          width: 2912px; }
-          body section #hiking .slideshow .slide-wrapper .slide {
-            width: 500px;
-            height: 300px;
-            float: left;
-            position: relative; }
-            body section #hiking .slideshow .slide-wrapper .slide .overlay {
-              position: absolute;
-              bottom: 0;
-              background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-              overflow: hidden;
-              height: 100%;
-              transition: .3s ease; }
-              body section #hiking .slideshow .slide-wrapper .slide .overlay .text {
-                color: white;
-                font-size: 10px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center; }
-            body section #hiking .slideshow .slide-wrapper .slide .overlay .text {
-              font-size: 25px; }
-      body section #hiking .slideshow2 {
-        border: 0px solid black;
-        width: 500px;
-        height: 300px;
-        grid-area: hiking2;
-        overflow: hidden;
-        margin: 0; }
-@keyframes fishslide {
-  20% {
-    margin-left: 0px; }
-  30% {
-    margin-left: -500px; }
-  50% {
-    margin-left: -500px; }
-  60% {
-    margin-left: -1000px; }
-  70% {
-    margin-left: -1000px; }
-  80% {
-    margin-left: -1500px; }
-  90% {
-    margin-left: -1500px; } }
-        body section #hiking .slideshow2 .slide-wrapper {
-          animation: fishslide 18s ease infinite;
-          width: 2912px; }
-          body section #hiking .slideshow2 .slide-wrapper .slide {
-            width: 500px;
-            height: 300px;
-            float: left; }
-      body section #hiking .hike {
-        border: 0px solid black;
-        width: 500px;
-        height: 200px;
-        grid-area: hike;
-        position: relative; }
-        body section #hiking .hike .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #hiking .hike .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-      body section #hiking .hike2 {
-        border: 0px solid black;
-        width: 250px;
-        height: 200px;
-        grid-area: hike2;
-        position: relative; }
-        body section #hiking .hike2 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #hiking .hike2 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-      body section #hiking .hike3 {
-        border: 0px solid black;
-        width: 250px;
-        height: 200px;
-        grid-area: hike3;
-        position: relative; }
-        body section #hiking .hike3 .overlay {
-          position: absolute;
-          bottom: 0;
-          background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-          overflow: hidden;
-          height: 100%;
-          transition: .3s ease; }
-          body section #hiking .hike3 .overlay .text {
-            color: white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center; }
-    body section #rock-climbing {
-      display: grid;
-      grid-template-areas: 'topslot topslot topslot topslot' 'slot1 slotS slotS slot2' 'slot3 slotS slotS slot4';
-      padding-left: 0em;
-      padding-right: 0em;
-      padding-top: 2em; }
+    margin-left: -3px;
+    padding-top: 5em; }
+    body section h2 {
+      font-family: "Monoton", cursive; }
     body section .img1 {
-      border: 0px solid black;
-      width: 300px;
-      height: 200px;
-      grid-area: slot1;
-      position: relative; }
-      body section .img1 .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section .img1 .overlay .text {
-          color: white;
-          font-size: 10px;
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/Grootvadersbos-Camping.jpg"); }
+      body section .img1 article {
+        height: 254px;
+        width: 350px; }
+        body section .img1 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img1 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img1 .box1 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img1 .box1::before {
+          background-image: url("../images/locations/Grootvadersbos-Camping.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img1 .box1.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img1 .box1.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img1 .box1.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img1 .box1.up::before {
+          transform: translateY(0) translateZ(0); }
     body section .img2 {
-      border: 0px solid black;
-      width: 300px;
-      height: 200px;
-      grid-area: slot2;
-      position: relative; }
-      body section .img2 .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section .img2 .overlay .text {
-          color: white;
-          font-size: 10px;
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/River-Goose-Camping.jpg"); }
+      body section .img2 article {
+        height: 254px;
+        width: 350px; }
+        body section .img2 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img2 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img2 .box2 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img2 .box2::before {
+          background-image: url("../images/locations/River-Goose-Camping.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img2 .box2.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img2 .box2.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img2 .box2.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img2 .box2.up::before {
+          transform: translateY(0) translateZ(0); }
     body section .img3 {
-      border: 0px solid black;
-      width: 300px;
-      height: 200px;
-      grid-area: slot3;
-      position: relative; }
-      body section .img3 .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section .img3 .overlay .text {
-          color: white;
-          font-size: 10px;
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/Oewerzicht.jpg"); }
+      body section .img3 article {
+        height: 254px;
+        width: 350px; }
+        body section .img3 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img3 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img3 .box3 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img3 .box3::before {
+          background-image: url("../images/locations/Oewerzicht.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img3 .box3.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img3 .box3.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img3 .box3.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img3 .box3.up::before {
+          transform: translateY(0) translateZ(0); }
     body section .img4 {
-      border: 0px solid black;
-      width: 300px;
-      height: 200px;
-      grid-area: slot4;
-      position: relative; }
-      body section .img4 .overlay {
-        position: absolute;
-        bottom: 0;
-        background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-        overflow: hidden;
-        height: 100%;
-        transition: .3s ease; }
-        body section .img4 .overlay .text {
-          color: white;
-          font-size: 10px;
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/romanrocks.jpg"); }
+      body section .img4 article {
+        height: 254px;
+        width: 350px; }
+        body section .img4 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img4 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img4 .box4 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img4 .box4::before {
+          background-image: url("../images/locations/romanrocks.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
           position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center; }
-    body section .slideshow {
-      border: 0px solid black;
-      width: 1000px;
-      height: 200px;
-      grid-area: topslot;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img4 .box4.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img4 .box4.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img4 .box4.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img4 .box4.up::before {
+          transform: translateY(0) translateZ(0); }
+    body section .img5 {
+      width: 350px;
+      height: 254px;
+      background-size: cover;
       overflow: hidden;
-      margin: 0; }
-@keyframes rockslide {
-  20% {
-    margin-left: 0px; }
-  30% {
-    margin-left: -1000px; }
-  50% {
-    margin-left: -1000px; }
-  60% {
-    margin-left: -2000px; }
-  70% {
-    margin-left: -2000px; } }
-      body section .slideshow .slide-wrapper {
-        animation: rockslide 18s ease infinite;
-        width: 10000px; }
-        body section .slideshow .slide-wrapper .slide {
-          width: 1000px;
-          height: 200px;
-          float: left;
-          position: relative; }
-          body section .slideshow .slide-wrapper .slide .overlay {
-            position: absolute;
-            bottom: 0;
-            background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-            overflow: hidden;
-            height: 100%;
-            transition: .3s ease; }
-            body section .slideshow .slide-wrapper .slide .overlay .text {
-              color: white;
-              font-size: 10px;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              text-align: center; }
-          body section .slideshow .slide-wrapper .slide .overlay .text {
-            font-size: 25px; }
-    body section .slideshow2 {
-      border: 0px solid black;
-      width: 400px;
-      height: 400px;
-      grid-area: slotS;
+      background-image: url("../images/locations/riverpoint.jpg"); }
+      body section .img5 article {
+        height: 254px;
+        width: 350px; }
+        body section .img5 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img5 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img5 .box5 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img5 .box5::before {
+          background-image: url("../images/locations/riverpoint.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
+          position: absolute;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img5 .box5.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img5 .box5.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img5 .box5.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img5 .box5.up::before {
+          transform: translateY(0) translateZ(0); }
+    body section .img6 {
+      width: 350px;
+      height: 254px;
+      background-size: cover;
       overflow: hidden;
-      margin: 0; }
-@keyframes rockslide2 {
-  20% {
-    margin-left: 0px; }
-  30% {
-    margin-left: -400px; }
-  50% {
-    margin-left: -400px; }
-  60% {
-    margin-left: -800px; }
-  70% {
-    margin-left: -800px; }
-  80% {
-    margin-left: -1200px; }
-  90% {
-    margin-left: -1200px; } }
-      body section .slideshow2 .slide-wrapper {
-        animation: rockslide2 18s ease infinite;
-        width: 2912px; }
-        body section .slideshow2 .slide-wrapper .slide {
-          width: 400px;
-          height: 400px;
-          float: left; }
+      background-image: url("../images/locations/Brazenhead.jpg"); }
+      body section .img6 article {
+        height: 254px;
+        width: 350px; }
+        body section .img6 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img6 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img6 .box6 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img6 .box6::before {
+          background-image: url("../images/locations/Brazenhead.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
+          position: absolute;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img6 .box6.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img6 .box6.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img6 .box6.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img6 .box6.up::before {
+          transform: translateY(0) translateZ(0); }
+    body section .img7 {
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/mafadi2.jpg"); }
+      body section .img7 article {
+        height: 254px;
+        width: 350px; }
+        body section .img7 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img7 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img7 .box7 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img7 .box7::before {
+          background-image: url("../images/locations/mafadi2.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
+          position: absolute;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img7 .box7.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img7 .box7.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img7 .box7.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img7 .box7.up::before {
+          transform: translateY(0) translateZ(0); }
+    body section .img8 {
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/hiking/hiking5.jpg"); }
+      body section .img8 article {
+        height: 254px;
+        width: 350px; }
+        body section .img8 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img8 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img8 .box8 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img8 .box8::before {
+          background-image: url("../images/hiking/hiking5.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
+          position: absolute;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img8 .box8.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img8 .box8.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img8 .box8.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img8 .box8.up::before {
+          transform: translateY(0) translateZ(0); }
+    body section .img9 {
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/chapman.jpg"); }
+      body section .img9 article {
+        height: 254px;
+        width: 350px; }
+        body section .img9 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img9 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img9 .box9 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img9 .box9::before {
+          background-image: url("../images/locations/chapman.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
+          position: absolute;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img9 .box9.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img9 .box9.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img9 .box9.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img9 .box9.up::before {
+          transform: translateY(0) translateZ(0); }
+    body section .img10 {
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/De_Pakhuys.jpg"); }
+      body section .img10 article {
+        height: 254px;
+        width: 350px; }
+        body section .img10 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img10 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img10 .box10 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img10 .box10::before {
+          background-image: url("../images/locations/De_Pakhuys.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
+          position: absolute;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img10 .box10.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img10 .box10.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img10 .box10.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img10 .box10.up::before {
+          transform: translateY(0) translateZ(0); }
+    body section .img11 {
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/cederberg.jpg"); }
+      body section .img11 article {
+        height: 254px;
+        width: 350px; }
+        body section .img11 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img11 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img11 .box11 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img11 .box11::before {
+          background-image: url("../images/locations/cederberg.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
+          position: absolute;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img11 .box11.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img11 .box11.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img11 .box11.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img11 .box11.up::before {
+          transform: translateY(0) translateZ(0); }
+    body section .img12 {
+      width: 350px;
+      height: 254px;
+      background-size: cover;
+      overflow: hidden;
+      background-image: url("../images/locations/Roc_n_Rope.jpg"); }
+      body section .img12 article {
+        height: 254px;
+        width: 350px; }
+        body section .img12 article p {
+          font-size: 14px;
+          color: white; }
+      body section .img12 #button {
+        display: block;
+        width: 100%;
+        background-color: rgba(51, 51, 51, 0.5);
+        font-size: 40px;
+        border: 0;
+        cursor: pointer; }
+      body section .img12 .box12 {
+        margin-top: -20px;
+        position: relative;
+        background-color: #AD2222;
+        transition: transform 0.5s ease-out; }
+        body section .img12 .box12::before {
+          background-image: url("../images/locations/Roc_n_Rope.jpg");
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          opacity: 0.5;
+          z-index: -1;
+          display: block;
+          position: absolute;
+          content: '  ';
+          transition: transform 0.5s ease-out; }
+      body section .img12 .box12.down {
+        transform: translateY(100%) translateY(-45px) translateZ(0); }
+        body section .img12 .box12.down::before {
+          transform: translateY(-100%) translateY(45px) translateZ(0); }
+      body section .img12 .box12.up {
+        transform: translateY(0) translateZ(0); }
+        body section .img12 .box12.up::before {
+          transform: translateY(0) translateZ(0); }
   body footer {
     border: 0px solid;
     background-color: #ffffff45;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto 5fr;
-    grid-gap: 10px;
-    width: 150%; }
+    grid-gap: 10px; }
     body footer div {
       display: inline-block;
       padding: 5px; }
@@ -810,141 +642,273 @@ body {
     body footer #related-sites {
       grid-column: 2 / 3; }
 
+@media only screen and (min-width: 450px) {
+  body section .img1 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img1 article {
+      width: 480px; }
+  body section .img2 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img2 article {
+      width: 480px; }
+  body section .img3 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img3 article {
+      width: 480px; }
+  body section .img4 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img4 article {
+      width: 480px; }
+  body section .img5 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img5 article {
+      width: 480px; }
+  body section .img6 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img6 article {
+      width: 480px; }
+  body section .img7 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img7 article {
+      width: 480px; }
+  body section .img8 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img8 article {
+      width: 480px; }
+  body section .img9 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img9 article {
+      width: 480px; }
+  body section .img10 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img10 article {
+      width: 480px; }
+  body section .img11 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img11 article {
+      width: 480px; }
+  body section .img12 {
+    display: inline-block;
+    width: 480px;
+    margin: 0 auto; }
+    body section .img12 article {
+      width: 480px; } }
+@media only screen and (min-width: 400px) {
+  body section .img1 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img1 article {
+      width: auto; }
+  body section .img2 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img2 article {
+      width: auto; }
+  body section .img3 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img3 article {
+      width: auto; }
+  body section .img4 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img4 article {
+      width: auto; }
+  body section .img5 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img5 article {
+      width: auto; }
+  body section .img6 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img6 article {
+      width: auto; }
+  body section .img7 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img7 article {
+      width: auto; }
+  body section .img8 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img8 article {
+      width: auto; }
+  body section .img9 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img9 article {
+      width: auto; }
+  body section .img10 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img10 article {
+      width: auto; }
+  body section .img11 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img11 article {
+      width: auto; }
+  body section .img12 {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto; }
+    body section .img12 article {
+      width: auto; } }
 @media only screen and (min-width: 1000px) {
-  body section #camping {
-    padding: 10em;
-    padding-left: 22em; }
-  body section #fishing {
-    padding-left: 15em;
-    padding-right: 20em; }
-  body section #hiking {
-    padding-left: 15em;
-    padding-right: 20em; }
-  body section #rock-climbing {
-    padding-left: 15em;
-    padding-right: 20em; }
-  body footer div ul {
-    margin-left: -40px; }
-    body footer div ul li {
-      display: block;
-      padding-left: 0px; } }
-@media only screen and (min-width: 1440px) {
-  body section #camping {
-    padding-left: 23em;
-    padding-right: 25em;
-    padding-top: 6em;
-    padding-bottom: 11em; }
-  body section #fishing {
-    padding-left: 15em;
-    padding-right: 20em; }
-    body section #fishing .slideshow .overlay {
-      left: 0;
-      right: 0;
-      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-      overflow: hidden;
-      width: 100%;
-      transform: scale(0); }
-    body section #fishing .slideshow:hover .overlay {
-      transform: scale(1); }
-    body section #fishing .part1 .overlay {
-      left: 0;
-      right: 0;
-      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-      overflow: hidden;
-      width: 100%;
-      transform: scale(0); }
-    body section #fishing .part1:hover .overlay {
-      transform: scale(1); }
-    body section #fishing .part2 .overlay {
-      left: 0;
-      right: 0;
-      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-      overflow: hidden;
-      width: 100%;
-      transform: scale(0); }
-    body section #fishing .part2:hover .overlay {
-      transform: scale(1); }
-    body section #fishing .part3 .overlay {
-      left: 0;
-      right: 0;
-      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-      overflow: hidden;
-      width: 100%;
-      transform: scale(0); }
-    body section #fishing .part3:hover .overlay {
-      transform: scale(1); }
-  body section #hiking {
-    padding-left: 15em;
-    padding-right: 20em; }
-    body section #hiking .slideshow .overlay {
-      left: 0;
-      right: 0;
-      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-      overflow: hidden;
-      width: 100%;
-      transform: scale(0); }
-    body section #hiking .slideshow:hover .overlay {
-      transform: scale(1); }
-    body section #hiking .hike .overlay {
-      left: 0;
-      right: 0;
-      background: radial-gradient(#6F1616, #8E1C1C, #AD2222, #BB4A4A, #CA7272);
-      overflow: hidden;
-      width: 100%;
-      transform: scale(0); }
-    body section #hiking .hike:hover .overlay {
-      transform: scale(1); }
-    body section #hiking .hike2 .overlay {
-      left: 100%;
-      right: 0;
-      width: 0; }
-    body section #hiking .hike2:hover .overlay {
-      width: 100%;
-      left: 0; }
-    body section #hiking .hike3 .overlay {
-      left: 0;
-      right: 100%;
-      width: 0; }
-    body section #hiking .hike3:hover .overlay {
-      width: 100%;
-      right: 0; }
-  body section #rock-climbing {
-    padding-left: 15em;
-    padding-right: 20em; }
-    body section #rock-climbing .img1 .overlay {
-      left: 100%;
-      right: 0;
-      width: 0; }
-    body section #rock-climbing .img1:hover .overlay {
-      width: 100%;
-      left: 0; }
-    body section #rock-climbing .img2 .overlay {
-      left: 0;
-      right: 100%;
-      width: 0; }
-    body section #rock-climbing .img2:hover .overlay {
-      width: 100%;
-      right: 0; }
-    body section #rock-climbing .img3 .overlay {
-      left: 0;
-      right: 100%;
-      width: 0; }
-    body section #rock-climbing .img3:hover .overlay {
-      width: 100%;
-      right: 0; }
-    body section #rock-climbing .img4 .overlay {
-      left: 100%;
-      right: 0;
-      width: 0; }
-    body section #rock-climbing .img4:hover .overlay {
-      width: 100%;
-      left: 0; }
-    body section #rock-climbing .slideshow .overlay {
-      left: 0;
-      right: 100%;
-      width: 0; }
-    body section #rock-climbing .slideshow:hover .overlay {
-      width: 100%;
-      right: 0; } }
+  body section .img1 {
+    display: inline-block;
+    width: 480px; }
+    body section .img1 article {
+      width: 480px; }
+  body section .img2 {
+    display: inline-block;
+    width: 480px; }
+    body section .img2 article {
+      width: 480px; }
+  body section .img3 {
+    display: inline-block;
+    width: auto; }
+    body section .img3 article {
+      width: auto; }
+  body section .img4 {
+    display: inline-block;
+    width: 480px; }
+    body section .img4 article {
+      width: 480px; }
+  body section .img5 {
+    display: inline-block;
+    width: 480px; }
+    body section .img5 article {
+      width: 480px; }
+  body section .img6 {
+    display: inline-block;
+    width: auto; }
+    body section .img6 article {
+      width: auto; }
+  body section .img7 {
+    display: inline-block;
+    width: 480px; }
+    body section .img7 article {
+      width: 480px; }
+  body section .img8 {
+    display: inline-block;
+    width: 480px; }
+    body section .img8 article {
+      width: 480px; }
+  body section .img9 {
+    display: inline-block;
+    width: auto; }
+    body section .img9 article {
+      width: auto; }
+  body section .img10 {
+    display: inline-block;
+    width: 480px; }
+    body section .img10 article {
+      width: 480px; }
+  body section .img11 {
+    display: inline-block;
+    width: 480px; }
+    body section .img11 article {
+      width: 480px; }
+  body section .img12 {
+    display: inline-block;
+    width: auto; }
+    body section .img12 article {
+      width: auto; } }
+@media only screen and (min-width: 1400px) {
+  body section .img1 {
+    display: inline-block;
+    width: 480px; }
+    body section .img1 article {
+      width: 480px; }
+  body section .img2 {
+    display: inline-block;
+    width: 480px; }
+    body section .img2 article {
+      width: 480px; }
+  body section .img3 {
+    display: inline-block;
+    width: 480px; }
+    body section .img3 article {
+      width: 480px; }
+  body section .img4 {
+    display: inline-block;
+    width: 480px; }
+    body section .img4 article {
+      width: 480px; }
+  body section .img5 {
+    display: inline-block;
+    width: 480px; }
+    body section .img5 article {
+      width: 480px; }
+  body section .img6 {
+    display: inline-block;
+    width: 480px; }
+    body section .img6 article {
+      width: 480px; }
+  body section .img7 {
+    display: inline-block;
+    width: 480px; }
+    body section .img7 article {
+      width: 480px; }
+  body section .img8 {
+    display: inline-block;
+    width: 480px; }
+    body section .img8 article {
+      width: 480px; }
+  body section .img9 {
+    display: inline-block;
+    width: 480px; }
+    body section .img9 article {
+      width: 480px; }
+  body section .img10 {
+    display: inline-block;
+    width: 480px; }
+    body section .img10 article {
+      width: 480px; }
+  body section .img11 {
+    display: inline-block;
+    width: 480px; }
+    body section .img11 article {
+      width: 480px; }
+  body section .img12 {
+    display: inline-block;
+    width: 480px; }
+    body section .img12 article {
+      width: 480px; } }
 
 /*# sourceMappingURL=style2.css.map */
