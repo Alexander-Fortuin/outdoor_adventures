@@ -15,479 +15,443 @@ body {
   section {
     margin-left: -3px;
     padding-top: 5em;
+    text-align: center;
     h2 {
       font-family: $basefont;
     }
 //////////////////////////////////////////////////////
     //Camping
     ////////////////////
-    .img1 {
-      @include image;
-      background-image: url('../images/locations/Grootvadersbos-Camping.jpg');
+    .campImg {
+      display: grid;
+      grid-template-columns: 1fr;
+      .img1 {
+        @include image;
+        background-image: url('../images/locations/Grootvadersbos-Camping.jpg');
 
 
-      @include gallery;
-      .box1 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/Grootvadersbos-Camping.jpg');
-      		@include firstbefore;
-      	}
+        @include gallery;
+        .box1 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/Grootvadersbos-Camping.jpg');
+        		@include firstbefore;
+        	}
+        }
+
+        .box1.down {
+        	@include down;
+        }
+        .box1.up {
+        	@include up;
+        }
       }
-
-      .box1.down {
-      	@include down;
-      }
-      .box1.up {
-      	@include up;
-      }
-    }
-    ////////////////////
-    .img2 {
-      @include image;
-      background-image: url('../images/locations/River-Goose-Camping.jpg');
+      ////////////////////
+      .img2 {
+        @include image;
+        background-image: url('../images/locations/River-Goose-Camping.jpg');
 
 
-      @include gallery;
-      .box2 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/River-Goose-Camping.jpg');
-      		@include firstbefore;
-      	}
-      }
+        @include gallery;
+        .box2 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/River-Goose-Camping.jpg');
+        		@include firstbefore;
+        	}
+        }
 
-      .box2.down {
-      	@include down;
+        .box2.down {
+        	@include down;
+        }
+        .box2.up {
+        	@include up;
+        }
       }
-      .box2.up {
-      	@include up;
-      }
-    }
-    ////////////////////
-    .img3 {
-      @include image;
-      background-image: url('../images/locations/Oewerzicht.jpg');
+      ////////////////////
+      .img3 {
+        @include image;
+        background-image: url('../images/locations/Oewerzicht.jpg');
 
 
-      @include gallery;
-      .box3 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/Oewerzicht.jpg');
-      		@include firstbefore;
-      	}
-      }
+        @include gallery;
+        .box3 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/Oewerzicht.jpg');
+        		@include firstbefore;
+        	}
+        }
 
-      .box3.down {
-      	@include down;
-      }
-      .box3.up {
-      	@include up;
+        .box3.down {
+        	@include down;
+        }
+        .box3.up {
+        	@include up;
+        }
       }
     }
 //////////////////////////////////////////////////////
     //Fishing
     ////////////////////
-    .img4 {
-      @include image;
-      background-image: url('../images/locations/romanrocks.jpg');
+    .fishImg {
+      display: grid;
+      grid-template-columns: 1fr;
+      .img4 {
+        @include image;
+        background-image: url('../images/locations/romanrocks.jpg');
 
 
-      @include gallery;
-      .box4 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/romanrocks.jpg');
-      		@include firstbefore;
-      	}
+        @include gallery;
+        .box4 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/romanrocks.jpg');
+        		@include firstbefore;
+        	}
+        }
+
+        .box4.down {
+        	@include down;
+        }
+        .box4.up {
+        	@include up;
+        }
       }
-
-      .box4.down {
-      	@include down;
-      }
-      .box4.up {
-      	@include up;
-      }
-    }
-    ////////////////////
-    .img5 {
-      @include image;
-      background-image: url('../images/locations/riverpoint.jpg');
+      ////////////////////
+      .img5 {
+        @include image;
+        background-image: url('../images/locations/riverpoint.jpg');
 
 
-      @include gallery;
-      .box5 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/riverpoint.jpg');
-      		@include firstbefore;
-      	}
-      }
+        @include gallery;
+        .box5 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/riverpoint.jpg');
+        		@include firstbefore;
+        	}
+        }
 
-      .box5.down {
-      	@include down;
+        .box5.down {
+        	@include down;
+        }
+        .box5.up {
+        	@include up;
+        }
       }
-      .box5.up {
-      	@include up;
-      }
-    }
-    ////////////////////
-    .img6 {
-      @include image;
-      background-image: url('../images/locations/Brazenhead.jpg');
+      ////////////////////
+      .img6 {
+        @include image;
+        background-image: url('../images/locations/Brazenhead.jpg');
 
 
-      @include gallery;
-      .box6 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/Brazenhead.jpg');
-      		@include firstbefore;
-      	}
-      }
+        @include gallery;
+        .box6 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/Brazenhead.jpg');
+        		@include firstbefore;
+        	}
+        }
 
-      .box6.down {
-      	@include down;
-      }
-      .box6.up {
-      	@include up;
+        .box6.down {
+        	@include down;
+        }
+        .box6.up {
+        	@include up;
+        }
       }
     }
 //////////////////////////////////////////////////////
     //Hiking
     ////////////////////
-    .img7 {
-      @include image;
-      background-image: url('../images/locations/mafadi2.jpg');
+    .hikeImg {
+      display: grid;
+      grid-template-columns: 1fr;
+      .img7 {
+        @include image;
+        background-image: url('../images/locations/mafadi2.jpg');
 
 
-      @include gallery;
-      .box7 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/mafadi2.jpg');
-      		@include firstbefore;
-      	}
+        @include gallery;
+        .box7 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/mafadi2.jpg');
+        		@include firstbefore;
+        	}
+        }
+
+        .box7.down {
+        	@include down;
+        }
+        .box7.up {
+        	@include up;
+        }
       }
-
-      .box7.down {
-      	@include down;
-      }
-      .box7.up {
-      	@include up;
-      }
-    }
-    ////////////////////
-    .img8 {
-      @include image;
-      background-image: url('../images/hiking/hiking5.jpg');
+      ////////////////////
+      .img8 {
+        @include image;
+        background-image: url('../images/hiking/hiking5.jpg');
 
 
-      @include gallery;
-      .box8 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/hiking/hiking5.jpg');
-      		@include firstbefore;
-      	}
-      }
+        @include gallery;
+        .box8 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/hiking/hiking5.jpg');
+        		@include firstbefore;
+        	}
+        }
 
-      .box8.down {
-      	@include down;
+        .box8.down {
+        	@include down;
+        }
+        .box8.up {
+        	@include up;
+        }
       }
-      .box8.up {
-      	@include up;
-      }
-    }
-    ////////////////////
-    .img9 {
-      @include image;
-      background-image: url('../images/locations/chapman.jpg');
+      ////////////////////
+      .img9 {
+        @include image;
+        background-image: url('../images/locations/chapman.jpg');
 
 
-      @include gallery;
-      .box9 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/chapman.jpg');
-      		@include firstbefore;
-      	}
-      }
+        @include gallery;
+        .box9 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/chapman.jpg');
+        		@include firstbefore;
+        	}
+        }
 
-      .box9.down {
-      	@include down;
-      }
-      .box9.up {
-      	@include up;
+        .box9.down {
+        	@include down;
+        }
+        .box9.up {
+        	@include up;
+        }
       }
     }
 //////////////////////////////////////////////////////
     //Rock Climbing
     ////////////////////
-    .img10 {
-      @include image;
-      background-image: url('../images/locations/De_Pakhuys.jpg');
+    .rock-climbImg {
+      display: grid;
+      grid-template-columns: 1fr;
+      .img10 {
+        @include image;
+        background-image: url('../images/locations/De_Pakhuys.jpg');
 
 
-      @include gallery;
-      .box10 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/De_Pakhuys.jpg');
-      		@include firstbefore;
-      	}
+        @include gallery;
+        .box10 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/De_Pakhuys.jpg');
+        		@include firstbefore;
+        	}
+        }
+
+        .box10.down {
+        	@include down;
+        }
+        .box10.up {
+        	@include up;
+        }
       }
+      ////////////////////
+      .img11 {
+        @include image;
+        background-image: url('../images/locations/cederberg.jpg');
 
-      .box10.down {
-      	@include down;
+
+        @include gallery;
+        .box11 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/cederberg.jpg');
+        		@include firstbefore;
+        	}
+        }
+
+        .box11.down {
+        	@include down;
+        }
+        .box11.up {
+        	@include up;
+        }
       }
-      .box10.up {
-      	@include up;
+      ////////////////////
+      .img12 {
+        @include image;
+        background-image: url('../images/locations/Roc_n_Rope.jpg');
+
+
+        @include gallery;
+        .box12 {
+        	@include box;
+        	&::before {
+        		background-image: url('../images/locations/Roc_n_Rope.jpg');
+        		@include firstbefore;
+        	}
+        }
+
+        .box12.down {
+        	@include down;
+        }
+        .box12.up {
+        	@include up;
+        }
       }
     }
-    ////////////////////
-    .img11 {
-      @include image;
-      background-image: url('../images/locations/cederberg.jpg');
-
-
-      @include gallery;
-      .box11 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/cederberg.jpg');
-      		@include firstbefore;
-      	}
-      }
-
-      .box11.down {
-      	@include down;
-      }
-      .box11.up {
-      	@include up;
-      }
-    }
-    ////////////////////
-    .img12 {
-      @include image;
-      background-image: url('../images/locations/Roc_n_Rope.jpg');
-
-
-      @include gallery;
-      .box12 {
-      	@include box;
-      	&::before {
-      		background-image: url('../images/locations/Roc_n_Rope.jpg');
-      		@include firstbefore;
-      	}
-      }
-
-      .box12.down {
-      	@include down;
-      }
-      .box12.up {
-      	@include up;
-      }
-    }
-
   }
   footer {
     @include footer;
-  }
-}
-@media only screen and (min-width: 450px) {
-  body {
-    section {
-      // margin-left: 5em;
-      .img1 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img2 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img3 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img4 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img5 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img6 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img7 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img8 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img9 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img10 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img11 {
-        @include gallerydesktop;
-        margin: 0 auto;
-      }
-      .img12 {
-        @include gallerydesktop;
-        margin: 0 auto;
+    // width: 100%;
+    display: block;
+    grid-gap: 0px;
+    background-color: inherit;
+    color: white;
+    div {
+      a {
+        color: white;
+        &:hover {
+          color: $fireBrick;
+        }
       }
     }
   }
 }
+
 @media only screen and (min-width: 400px) {
   body {
     section {
       // margin-left: 5em;
       .img1 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img2 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img3 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img4 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img5 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img6 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img7 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img8 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img9 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img10 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img11 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
       .img12 {
-        @include gallerydesktopsmall;
+        @include gallerydesktop;
         margin: 0 auto;
       }
     }
   }
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
   body {
     section {
-      // margin-left: 5em;
-      .img1 {
-        @include gallerydesktop;
+      .campImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .img1 {
+          @include gallerydesktop;
+        }
+        .img2 {
+          @include gallerydesktop;
+        }
+        .img3 {
+          @include gallerydesktop;
+        }
       }
-      .img2 {
-        @include gallerydesktop;
+      .fishImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .img4 {
+          @include gallerydesktop;
+        }
+        .img5 {
+          @include gallerydesktop;
+        }
+        .img6 {
+          @include gallerydesktop;
+        }
       }
-      .img3 {
-        @include gallerydesktopsmall;
+      .hikeImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .img7 {
+          @include gallerydesktop;
+        }
+        .img8 {
+          @include gallerydesktop;
+        }
+        .img9 {
+          @include gallerydesktop;
+        }
       }
-      .img4 {
-        @include gallerydesktop;
-      }
-      .img5 {
-        @include gallerydesktop;
-      }
-      .img6 {
-        @include gallerydesktopsmall;
-      }
-      .img7 {
-        @include gallerydesktop;
-      }
-      .img8 {
-        @include gallerydesktop;
-      }
-      .img9 {
-        @include gallerydesktopsmall;
-      }
-      .img10 {
-        @include gallerydesktop;
-      }
-      .img11 {
-        @include gallerydesktop;
-      }
-      .img12 {
-        @include gallerydesktopsmall;
+      .rock-climbImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .img10 {
+          @include gallerydesktop;
+        }
+        .img11 {
+          @include gallerydesktop;
+        }
+        .img12 {
+          @include gallerydesktop;
+        }
       }
     }
-  }
-}
-@media only screen and (min-width: 1400px) {
-  body {
-    section {
-      // margin-left: 5em;
-      .img1 {
-        @include gallerydesktop;
-      }
-      .img2 {
-        @include gallerydesktop;
-      }
-      .img3 {
-        @include gallerydesktop;
-      }
-      .img4 {
-        @include gallerydesktop;
-      }
-      .img5 {
-        @include gallerydesktop;
-      }
-      .img6 {
-        @include gallerydesktop;
-      }
-      .img7 {
-        @include gallerydesktop;
-      }
-      .img8 {
-        @include gallerydesktop;
-      }
-      .img9 {
-        @include gallerydesktop;
-      }
-      .img10 {
-        @include gallerydesktop;
-      }
-      .img11 {
-        @include gallerydesktop;
-      }
-      .img12 {
-        @include gallerydesktop;
+    footer {
+      @include footer;
+      // width: 100%;
+      display: block;
+      grid-gap: 0px;
+      background-color: inherit;
+      color: $green;
+      div {
+        a {
+          color: $green;
+          &:hover {
+            text-decoration: underline;
+            color: $snow;
+          }
+        }
       }
     }
   }

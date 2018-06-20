@@ -97,532 +97,549 @@ body {
         display: inherit; }
   body section {
     margin-left: -3px;
-    padding-top: 5em; }
+    padding-top: 5em;
+    text-align: center; }
     body section h2 {
       font-family: "Monoton", cursive; }
-    body section .img1 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/Grootvadersbos-Camping.jpg"); }
-      body section .img1 article {
+    body section .campImg {
+      display: grid;
+      grid-template-columns: 1fr; }
+      body section .campImg .img1 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img1 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img1 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img1 .box1 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img1 .box1::before {
-          background-image: url("../images/locations/Grootvadersbos-Camping.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/Grootvadersbos-Camping.jpg"); }
+        body section .campImg .img1 article {
+          height: 254px;
+          width: 350px; }
+          body section .campImg .img1 article p {
+            font-size: 14px;
+            color: white; }
+        body section .campImg .img1 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .campImg .img1 .box1 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img1 .box1.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img1 .box1.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img1 .box1.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img1 .box1.up::before {
+          body section .campImg .img1 .box1::before {
+            background-image: url("../images/locations/Grootvadersbos-Camping.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .campImg .img1 .box1.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .campImg .img1 .box1.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .campImg .img1 .box1.up {
           transform: translateY(0) translateZ(0); }
-    body section .img2 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/River-Goose-Camping.jpg"); }
-      body section .img2 article {
+          body section .campImg .img1 .box1.up::before {
+            transform: translateY(0) translateZ(0); }
+      body section .campImg .img2 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img2 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img2 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img2 .box2 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img2 .box2::before {
-          background-image: url("../images/locations/River-Goose-Camping.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/River-Goose-Camping.jpg"); }
+        body section .campImg .img2 article {
+          height: 254px;
+          width: 350px; }
+          body section .campImg .img2 article p {
+            font-size: 14px;
+            color: white; }
+        body section .campImg .img2 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .campImg .img2 .box2 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img2 .box2.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img2 .box2.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img2 .box2.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img2 .box2.up::before {
+          body section .campImg .img2 .box2::before {
+            background-image: url("../images/locations/River-Goose-Camping.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .campImg .img2 .box2.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .campImg .img2 .box2.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .campImg .img2 .box2.up {
           transform: translateY(0) translateZ(0); }
-    body section .img3 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/Oewerzicht.jpg"); }
-      body section .img3 article {
+          body section .campImg .img2 .box2.up::before {
+            transform: translateY(0) translateZ(0); }
+      body section .campImg .img3 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img3 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img3 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img3 .box3 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img3 .box3::before {
-          background-image: url("../images/locations/Oewerzicht.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/Oewerzicht.jpg"); }
+        body section .campImg .img3 article {
+          height: 254px;
+          width: 350px; }
+          body section .campImg .img3 article p {
+            font-size: 14px;
+            color: white; }
+        body section .campImg .img3 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .campImg .img3 .box3 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img3 .box3.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img3 .box3.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img3 .box3.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img3 .box3.up::before {
+          body section .campImg .img3 .box3::before {
+            background-image: url("../images/locations/Oewerzicht.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .campImg .img3 .box3.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .campImg .img3 .box3.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .campImg .img3 .box3.up {
           transform: translateY(0) translateZ(0); }
-    body section .img4 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/romanrocks.jpg"); }
-      body section .img4 article {
+          body section .campImg .img3 .box3.up::before {
+            transform: translateY(0) translateZ(0); }
+    body section .fishImg {
+      display: grid;
+      grid-template-columns: 1fr; }
+      body section .fishImg .img4 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img4 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img4 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img4 .box4 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img4 .box4::before {
-          background-image: url("../images/locations/romanrocks.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/romanrocks.jpg"); }
+        body section .fishImg .img4 article {
+          height: 254px;
+          width: 350px; }
+          body section .fishImg .img4 article p {
+            font-size: 14px;
+            color: white; }
+        body section .fishImg .img4 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .fishImg .img4 .box4 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img4 .box4.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img4 .box4.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img4 .box4.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img4 .box4.up::before {
+          body section .fishImg .img4 .box4::before {
+            background-image: url("../images/locations/romanrocks.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .fishImg .img4 .box4.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .fishImg .img4 .box4.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .fishImg .img4 .box4.up {
           transform: translateY(0) translateZ(0); }
-    body section .img5 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/riverpoint.jpg"); }
-      body section .img5 article {
+          body section .fishImg .img4 .box4.up::before {
+            transform: translateY(0) translateZ(0); }
+      body section .fishImg .img5 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img5 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img5 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img5 .box5 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img5 .box5::before {
-          background-image: url("../images/locations/riverpoint.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/riverpoint.jpg"); }
+        body section .fishImg .img5 article {
+          height: 254px;
+          width: 350px; }
+          body section .fishImg .img5 article p {
+            font-size: 14px;
+            color: white; }
+        body section .fishImg .img5 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .fishImg .img5 .box5 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img5 .box5.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img5 .box5.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img5 .box5.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img5 .box5.up::before {
+          body section .fishImg .img5 .box5::before {
+            background-image: url("../images/locations/riverpoint.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .fishImg .img5 .box5.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .fishImg .img5 .box5.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .fishImg .img5 .box5.up {
           transform: translateY(0) translateZ(0); }
-    body section .img6 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/Brazenhead.jpg"); }
-      body section .img6 article {
+          body section .fishImg .img5 .box5.up::before {
+            transform: translateY(0) translateZ(0); }
+      body section .fishImg .img6 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img6 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img6 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img6 .box6 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img6 .box6::before {
-          background-image: url("../images/locations/Brazenhead.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/Brazenhead.jpg"); }
+        body section .fishImg .img6 article {
+          height: 254px;
+          width: 350px; }
+          body section .fishImg .img6 article p {
+            font-size: 14px;
+            color: white; }
+        body section .fishImg .img6 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .fishImg .img6 .box6 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img6 .box6.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img6 .box6.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img6 .box6.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img6 .box6.up::before {
+          body section .fishImg .img6 .box6::before {
+            background-image: url("../images/locations/Brazenhead.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .fishImg .img6 .box6.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .fishImg .img6 .box6.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .fishImg .img6 .box6.up {
           transform: translateY(0) translateZ(0); }
-    body section .img7 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/mafadi2.jpg"); }
-      body section .img7 article {
+          body section .fishImg .img6 .box6.up::before {
+            transform: translateY(0) translateZ(0); }
+    body section .hikeImg {
+      display: grid;
+      grid-template-columns: 1fr; }
+      body section .hikeImg .img7 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img7 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img7 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img7 .box7 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img7 .box7::before {
-          background-image: url("../images/locations/mafadi2.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/mafadi2.jpg"); }
+        body section .hikeImg .img7 article {
+          height: 254px;
+          width: 350px; }
+          body section .hikeImg .img7 article p {
+            font-size: 14px;
+            color: white; }
+        body section .hikeImg .img7 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .hikeImg .img7 .box7 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img7 .box7.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img7 .box7.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img7 .box7.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img7 .box7.up::before {
+          body section .hikeImg .img7 .box7::before {
+            background-image: url("../images/locations/mafadi2.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .hikeImg .img7 .box7.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .hikeImg .img7 .box7.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .hikeImg .img7 .box7.up {
           transform: translateY(0) translateZ(0); }
-    body section .img8 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/hiking/hiking5.jpg"); }
-      body section .img8 article {
+          body section .hikeImg .img7 .box7.up::before {
+            transform: translateY(0) translateZ(0); }
+      body section .hikeImg .img8 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img8 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img8 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img8 .box8 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img8 .box8::before {
-          background-image: url("../images/hiking/hiking5.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/hiking/hiking5.jpg"); }
+        body section .hikeImg .img8 article {
+          height: 254px;
+          width: 350px; }
+          body section .hikeImg .img8 article p {
+            font-size: 14px;
+            color: white; }
+        body section .hikeImg .img8 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .hikeImg .img8 .box8 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img8 .box8.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img8 .box8.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img8 .box8.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img8 .box8.up::before {
+          body section .hikeImg .img8 .box8::before {
+            background-image: url("../images/hiking/hiking5.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .hikeImg .img8 .box8.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .hikeImg .img8 .box8.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .hikeImg .img8 .box8.up {
           transform: translateY(0) translateZ(0); }
-    body section .img9 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/chapman.jpg"); }
-      body section .img9 article {
+          body section .hikeImg .img8 .box8.up::before {
+            transform: translateY(0) translateZ(0); }
+      body section .hikeImg .img9 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img9 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img9 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img9 .box9 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img9 .box9::before {
-          background-image: url("../images/locations/chapman.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/chapman.jpg"); }
+        body section .hikeImg .img9 article {
+          height: 254px;
+          width: 350px; }
+          body section .hikeImg .img9 article p {
+            font-size: 14px;
+            color: white; }
+        body section .hikeImg .img9 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .hikeImg .img9 .box9 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img9 .box9.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img9 .box9.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img9 .box9.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img9 .box9.up::before {
+          body section .hikeImg .img9 .box9::before {
+            background-image: url("../images/locations/chapman.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .hikeImg .img9 .box9.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .hikeImg .img9 .box9.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .hikeImg .img9 .box9.up {
           transform: translateY(0) translateZ(0); }
-    body section .img10 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/De_Pakhuys.jpg"); }
-      body section .img10 article {
+          body section .hikeImg .img9 .box9.up::before {
+            transform: translateY(0) translateZ(0); }
+    body section .rock-climbImg {
+      display: grid;
+      grid-template-columns: 1fr; }
+      body section .rock-climbImg .img10 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img10 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img10 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img10 .box10 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img10 .box10::before {
-          background-image: url("../images/locations/De_Pakhuys.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/De_Pakhuys.jpg"); }
+        body section .rock-climbImg .img10 article {
+          height: 254px;
+          width: 350px; }
+          body section .rock-climbImg .img10 article p {
+            font-size: 14px;
+            color: white; }
+        body section .rock-climbImg .img10 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .rock-climbImg .img10 .box10 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img10 .box10.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img10 .box10.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img10 .box10.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img10 .box10.up::before {
+          body section .rock-climbImg .img10 .box10::before {
+            background-image: url("../images/locations/De_Pakhuys.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .rock-climbImg .img10 .box10.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .rock-climbImg .img10 .box10.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .rock-climbImg .img10 .box10.up {
           transform: translateY(0) translateZ(0); }
-    body section .img11 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/cederberg.jpg"); }
-      body section .img11 article {
+          body section .rock-climbImg .img10 .box10.up::before {
+            transform: translateY(0) translateZ(0); }
+      body section .rock-climbImg .img11 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img11 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img11 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img11 .box11 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img11 .box11::before {
-          background-image: url("../images/locations/cederberg.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/cederberg.jpg"); }
+        body section .rock-climbImg .img11 article {
+          height: 254px;
+          width: 350px; }
+          body section .rock-climbImg .img11 article p {
+            font-size: 14px;
+            color: white; }
+        body section .rock-climbImg .img11 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .rock-climbImg .img11 .box11 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img11 .box11.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img11 .box11.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img11 .box11.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img11 .box11.up::before {
+          body section .rock-climbImg .img11 .box11::before {
+            background-image: url("../images/locations/cederberg.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .rock-climbImg .img11 .box11.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .rock-climbImg .img11 .box11.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .rock-climbImg .img11 .box11.up {
           transform: translateY(0) translateZ(0); }
-    body section .img12 {
-      width: 350px;
-      height: 254px;
-      background-size: cover;
-      overflow: hidden;
-      background-image: url("../images/locations/Roc_n_Rope.jpg"); }
-      body section .img12 article {
+          body section .rock-climbImg .img11 .box11.up::before {
+            transform: translateY(0) translateZ(0); }
+      body section .rock-climbImg .img12 {
+        width: 350px;
         height: 254px;
-        width: 350px; }
-        body section .img12 article p {
-          font-size: 14px;
-          color: white; }
-      body section .img12 #button {
-        display: block;
-        width: 100%;
-        background-color: rgba(51, 51, 51, 0.5);
-        font-size: 40px;
-        border: 0;
-        cursor: pointer; }
-      body section .img12 .box12 {
-        margin-top: -20px;
-        position: relative;
-        background-color: #AD2222;
-        transition: transform 0.5s ease-out; }
-        body section .img12 .box12::before {
-          background-image: url("../images/locations/Roc_n_Rope.jpg");
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          opacity: 0.5;
-          z-index: -1;
+        background-size: cover;
+        overflow: hidden;
+        background-image: url("../images/locations/Roc_n_Rope.jpg"); }
+        body section .rock-climbImg .img12 article {
+          height: 254px;
+          width: 350px; }
+          body section .rock-climbImg .img12 article p {
+            font-size: 14px;
+            color: white; }
+        body section .rock-climbImg .img12 #button {
           display: block;
-          position: absolute;
-          content: '  ';
+          width: 100%;
+          background-color: rgba(51, 51, 51, 0.5);
+          font-size: 40px;
+          border: 0;
+          cursor: pointer; }
+        body section .rock-climbImg .img12 .box12 {
+          margin-top: -20px;
+          position: relative;
+          background-color: #AD2222;
           transition: transform 0.5s ease-out; }
-      body section .img12 .box12.down {
-        transform: translateY(100%) translateY(-45px) translateZ(0); }
-        body section .img12 .box12.down::before {
-          transform: translateY(-100%) translateY(45px) translateZ(0); }
-      body section .img12 .box12.up {
-        transform: translateY(0) translateZ(0); }
-        body section .img12 .box12.up::before {
+          body section .rock-climbImg .img12 .box12::before {
+            background-image: url("../images/locations/Roc_n_Rope.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 0.5;
+            z-index: -1;
+            display: block;
+            position: absolute;
+            content: '  ';
+            transition: transform 0.5s ease-out; }
+        body section .rock-climbImg .img12 .box12.down {
+          transform: translateY(100%) translateY(-45px) translateZ(0); }
+          body section .rock-climbImg .img12 .box12.down::before {
+            transform: translateY(-100%) translateY(45px) translateZ(0); }
+        body section .rock-climbImg .img12 .box12.up {
           transform: translateY(0) translateZ(0); }
+          body section .rock-climbImg .img12 .box12.up::before {
+            transform: translateY(0) translateZ(0); }
   body footer {
     border: 0px solid;
     background-color: #ffffff45;
     width: 100%;
     display: grid;
     grid-template-columns: auto auto 5fr;
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    display: block;
+    grid-gap: 0px;
+    background-color: inherit;
+    color: white; }
     body footer div {
       display: inline-block;
       padding: 5px; }
@@ -641,274 +658,190 @@ body {
       grid-column: 1 / 2; }
     body footer #related-sites {
       grid-column: 2 / 3; }
+    body footer div a {
+      color: white; }
+      body footer div a:hover {
+        color: #AD2222; }
 
-@media only screen and (min-width: 450px) {
-  body section .img1 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img1 article {
-      width: 480px; }
-  body section .img2 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img2 article {
-      width: 480px; }
-  body section .img3 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img3 article {
-      width: 480px; }
-  body section .img4 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img4 article {
-      width: 480px; }
-  body section .img5 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img5 article {
-      width: 480px; }
-  body section .img6 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img6 article {
-      width: 480px; }
-  body section .img7 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img7 article {
-      width: 480px; }
-  body section .img8 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img8 article {
-      width: 480px; }
-  body section .img9 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img9 article {
-      width: 480px; }
-  body section .img10 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img10 article {
-      width: 480px; }
-  body section .img11 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img11 article {
-      width: 480px; }
-  body section .img12 {
-    display: inline-block;
-    width: 480px;
-    margin: 0 auto; }
-    body section .img12 article {
-      width: 480px; } }
 @media only screen and (min-width: 400px) {
   body section .img1 {
     display: inline-block;
-    width: auto;
+    width: 480px;
     margin: 0 auto; }
-    body section .img1 article {
-      width: auto; }
-  body section .img2 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img2 article {
-      width: auto; }
-  body section .img3 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img3 article {
-      width: auto; }
-  body section .img4 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img4 article {
-      width: auto; }
-  body section .img5 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img5 article {
-      width: auto; }
-  body section .img6 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img6 article {
-      width: auto; }
-  body section .img7 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img7 article {
-      width: auto; }
-  body section .img8 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img8 article {
-      width: auto; }
-  body section .img9 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img9 article {
-      width: auto; }
-  body section .img10 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img10 article {
-      width: auto; }
-  body section .img11 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img11 article {
-      width: auto; }
-  body section .img12 {
-    display: inline-block;
-    width: auto;
-    margin: 0 auto; }
-    body section .img12 article {
-      width: auto; } }
-@media only screen and (min-width: 1000px) {
-  body section .img1 {
-    display: inline-block;
-    width: 480px; }
     body section .img1 article {
       width: 480px; }
   body section .img2 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img2 article {
       width: 480px; }
   body section .img3 {
     display: inline-block;
-    width: auto; }
-    body section .img3 article {
-      width: auto; }
-  body section .img4 {
-    display: inline-block;
-    width: 480px; }
-    body section .img4 article {
-      width: 480px; }
-  body section .img5 {
-    display: inline-block;
-    width: 480px; }
-    body section .img5 article {
-      width: 480px; }
-  body section .img6 {
-    display: inline-block;
-    width: auto; }
-    body section .img6 article {
-      width: auto; }
-  body section .img7 {
-    display: inline-block;
-    width: 480px; }
-    body section .img7 article {
-      width: 480px; }
-  body section .img8 {
-    display: inline-block;
-    width: 480px; }
-    body section .img8 article {
-      width: 480px; }
-  body section .img9 {
-    display: inline-block;
-    width: auto; }
-    body section .img9 article {
-      width: auto; }
-  body section .img10 {
-    display: inline-block;
-    width: 480px; }
-    body section .img10 article {
-      width: 480px; }
-  body section .img11 {
-    display: inline-block;
-    width: 480px; }
-    body section .img11 article {
-      width: 480px; }
-  body section .img12 {
-    display: inline-block;
-    width: auto; }
-    body section .img12 article {
-      width: auto; } }
-@media only screen and (min-width: 1400px) {
-  body section .img1 {
-    display: inline-block;
-    width: 480px; }
-    body section .img1 article {
-      width: 480px; }
-  body section .img2 {
-    display: inline-block;
-    width: 480px; }
-    body section .img2 article {
-      width: 480px; }
-  body section .img3 {
-    display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img3 article {
       width: 480px; }
   body section .img4 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img4 article {
       width: 480px; }
   body section .img5 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img5 article {
       width: 480px; }
   body section .img6 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img6 article {
       width: 480px; }
   body section .img7 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img7 article {
       width: 480px; }
   body section .img8 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img8 article {
       width: 480px; }
   body section .img9 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img9 article {
       width: 480px; }
   body section .img10 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img10 article {
       width: 480px; }
   body section .img11 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img11 article {
       width: 480px; }
   body section .img12 {
     display: inline-block;
-    width: 480px; }
+    width: 480px;
+    margin: 0 auto; }
     body section .img12 article {
       width: 480px; } }
+@media only screen and (min-width: 800px) {
+  body section .campImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    body section .campImg .img1 {
+      display: inline-block;
+      width: 480px; }
+      body section .campImg .img1 article {
+        width: 480px; }
+    body section .campImg .img2 {
+      display: inline-block;
+      width: 480px; }
+      body section .campImg .img2 article {
+        width: 480px; }
+    body section .campImg .img3 {
+      display: inline-block;
+      width: 480px; }
+      body section .campImg .img3 article {
+        width: 480px; }
+  body section .fishImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    body section .fishImg .img4 {
+      display: inline-block;
+      width: 480px; }
+      body section .fishImg .img4 article {
+        width: 480px; }
+    body section .fishImg .img5 {
+      display: inline-block;
+      width: 480px; }
+      body section .fishImg .img5 article {
+        width: 480px; }
+    body section .fishImg .img6 {
+      display: inline-block;
+      width: 480px; }
+      body section .fishImg .img6 article {
+        width: 480px; }
+  body section .hikeImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    body section .hikeImg .img7 {
+      display: inline-block;
+      width: 480px; }
+      body section .hikeImg .img7 article {
+        width: 480px; }
+    body section .hikeImg .img8 {
+      display: inline-block;
+      width: 480px; }
+      body section .hikeImg .img8 article {
+        width: 480px; }
+    body section .hikeImg .img9 {
+      display: inline-block;
+      width: 480px; }
+      body section .hikeImg .img9 article {
+        width: 480px; }
+  body section .rock-climbImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    body section .rock-climbImg .img10 {
+      display: inline-block;
+      width: 480px; }
+      body section .rock-climbImg .img10 article {
+        width: 480px; }
+    body section .rock-climbImg .img11 {
+      display: inline-block;
+      width: 480px; }
+      body section .rock-climbImg .img11 article {
+        width: 480px; }
+    body section .rock-climbImg .img12 {
+      display: inline-block;
+      width: 480px; }
+      body section .rock-climbImg .img12 article {
+        width: 480px; }
+  body footer {
+    border: 0px solid;
+    background-color: #ffffff45;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto 5fr;
+    grid-gap: 10px;
+    display: block;
+    grid-gap: 0px;
+    background-color: inherit;
+    color: #183A37; }
+    body footer div {
+      display: inline-block;
+      padding: 5px; }
+      body footer div ul {
+        margin-left: -50px; }
+        body footer div ul li {
+          display: inline-block;
+          padding-left: 10px; }
+      body footer div a {
+        text-decoration: none;
+        color: #183A37; }
+        body footer div a:hover {
+          text-decoration: underline;
+          color: #f9f9f9; }
+    body footer #about {
+      grid-column: 1 / 2; }
+    body footer #related-sites {
+      grid-column: 2 / 3; }
+    body footer div a {
+      color: #183A37; }
+      body footer div a:hover {
+        text-decoration: underline;
+        color: #f9f9f9; } }
 
 /*# sourceMappingURL=style2.css.map */
