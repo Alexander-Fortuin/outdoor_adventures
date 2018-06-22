@@ -71,6 +71,10 @@ body {
        grid-template-rows: 10% 90%;
        h3 {
          margin-left: 3em;
+         a {
+           text-decoration: none;
+           color: $black;
+         }
        }
        .homeImg {
          height: 100%;
@@ -81,6 +85,7 @@ body {
      .content {
        width: 100%;
      }
+     // Camping Section
      #camping {
        background-color: #b1706761;
        grid-area: section;
@@ -92,6 +97,7 @@ body {
          }
        }
      }
+     // Fishing Section
      #fishing {
        background-color: #b1706761;
        grid-area: sectiontwo;
@@ -103,6 +109,7 @@ body {
          }
        }
      }
+     // Hiking Section
      #hiking {
        background-color: #b1706761;
        grid-area: sectionthree;
@@ -114,6 +121,7 @@ body {
          }
        }
       }
+      // Rock Climbing Section
      #rock-climbing {
        background-color: #b1706761;
        grid-area: sectionfour;
@@ -126,6 +134,7 @@ body {
        }
      }
      //////////////////////////sidebar//////////////////
+     // scroll sidebar part one
      #scroll-one {
        background-color: #b1706761;
        grid-area: sidebar;
@@ -133,6 +142,7 @@ body {
          font-family: $h5font;
        }
      }
+     // scroll sidebar part two
      #scroll-two {
        background-color: #b1706761;
        grid-area: sidebarTwo;
@@ -140,7 +150,7 @@ body {
          font-family: $h5font;
        }
      }
-
+     // both scroll sidebar
    .sidebar {
       @include scrollB;
       .heading {
@@ -149,8 +159,6 @@ body {
       }
       .picture {
         width: 100%;
-        // height: 100%;
-        // width: 500px;
         height: 300px;
         display: inline-block;
       }
@@ -179,7 +187,6 @@ body {
          margin-left: 1em;
          float: right;
          .picture {
-           // width: 361px;
            height: 200px;
            display: block;
          }

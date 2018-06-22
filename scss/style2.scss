@@ -12,10 +12,13 @@ body {
     z-index: 2;
     position: fixed;
   }
+
+
   section {
     margin-left: -3px;
     padding-top: 5em;
     text-align: center;
+
     h2 {
       font-family: $basefont;
     }
@@ -310,7 +313,6 @@ body {
   }
   footer {
     @include footer;
-    // width: 100%;
     display: block;
     grid-gap: 0px;
     background-color: inherit;

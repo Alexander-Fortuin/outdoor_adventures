@@ -139,6 +139,9 @@ body {
       grid-template-rows: 10% 90%; }
       body section #images h3 {
         margin-left: 3em; }
+        body section #images h3 a {
+          text-decoration: none;
+          color: #000; }
       body section #images .homeImg {
         height: 100%;
         width: 100%; }

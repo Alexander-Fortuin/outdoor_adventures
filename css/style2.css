@@ -120,9 +120,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .campImg .img1 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .campImg .img1 .box1 {
           margin-top: -20px;
           position: relative;
@@ -163,9 +177,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .campImg .img2 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .campImg .img2 .box2 {
           margin-top: -20px;
           position: relative;
@@ -206,9 +234,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .campImg .img3 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .campImg .img3 .box3 {
           margin-top: -20px;
           position: relative;
@@ -252,9 +294,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .fishImg .img4 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .fishImg .img4 .box4 {
           margin-top: -20px;
           position: relative;
@@ -295,9 +351,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .fishImg .img5 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .fishImg .img5 .box5 {
           margin-top: -20px;
           position: relative;
@@ -338,9 +408,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .fishImg .img6 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .fishImg .img6 .box6 {
           margin-top: -20px;
           position: relative;
@@ -384,9 +468,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .hikeImg .img7 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .hikeImg .img7 .box7 {
           margin-top: -20px;
           position: relative;
@@ -427,9 +525,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .hikeImg .img8 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .hikeImg .img8 .box8 {
           margin-top: -20px;
           position: relative;
@@ -470,9 +582,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .hikeImg .img9 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .hikeImg .img9 .box9 {
           margin-top: -20px;
           position: relative;
@@ -516,9 +642,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .rock-climbImg .img10 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .rock-climbImg .img10 .box10 {
           margin-top: -20px;
           position: relative;
@@ -559,9 +699,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .rock-climbImg .img11 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .rock-climbImg .img11 .box11 {
           margin-top: -20px;
           position: relative;
@@ -602,9 +756,23 @@ body {
           display: block;
           width: 100%;
           background-color: rgba(51, 51, 51, 0.5);
+          box-shadow: inset 2.5px 2.5px 2px rgba(255, 255, 255, 0.5), inset -2.5px -2.5px 4px rgba(0, 0, 0, 0.4), -0.3px -0.3px 4px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.6);
           font-size: 40px;
           border: 0;
           cursor: pointer; }
+          body section .rock-climbImg .img12 #button:hover {
+            color: white;
+            animation-name: hover;
+            animation-duration: 2s; }
+@keyframes hover {
+  25% {
+    box-shadow: inset 0px 0px 0px 0px; }
+  50% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  75% {
+    box-shadow: inset 0px 0px 20px 8px; }
+  100% {
+    box-shadow: inset 0px 0px 0px 0px; } }
         body section .rock-climbImg .img12 .box12 {
           margin-top: -20px;
           position: relative;
